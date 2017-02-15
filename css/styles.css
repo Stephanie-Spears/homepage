@@ -3,5 +3,14 @@
 }
 
 body {
-  background-image: url("../img/Arc.jpg");
+  /*background-image: url("../img/Arc.jpg");*/
+  background-color: #4a4a4a;
+
+
+}
+
+#name {
+  color: steelblue;
+  font-family: Averia Serif Libre, sans-serif;
+  font-weight: bold;
 }
