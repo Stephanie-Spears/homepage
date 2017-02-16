@@ -3,14 +3,27 @@
 }
 
 body {
-  /*background-image: url("../img/Arc.jpg");*/
+  background-image: url("../img/Arc.jpg");
   background-color: #4a4a4a;
+}
 
-
+#homepageContent{
+  text-align: center;
+  color: #f3f3f3;
+  /*background-color: gray;*/
 }
 
 #name {
+  font-size: 40px;
   color: steelblue;
   font-family: Averia Serif Libre, sans-serif;
   font-weight: bold;
+  display: inline;
+}
+
+#title {
+  font-size: 16px;
+  color: black;
+  font-family: Averia Serif Libre, sans-serif;
+  font-weight: normal;
 }
