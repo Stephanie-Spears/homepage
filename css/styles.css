@@ -1,10 +1,10 @@
 #siteNav {
-  background-color: #484848;
+  /*background-color: #484848;*/
   border: 2px solid steelblue;
 }
 
 body {
-  background-image: url("../../img/backgrounds/Arc.jpg");
+  background-image: url("../img/Arc.jpg");
 }
 
 #homepageContent{
@@ -14,8 +14,11 @@ background-color: grey;
   height: 30%;
   margin-top: 375px;
   margin-left: 25px;
-  /*overflow: visible;*/
 }
+/*
+#main-mav{
+
+}*/
 
 #name {
   font-size: 40px;
