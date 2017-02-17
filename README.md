@@ -20,11 +20,11 @@ _This is a web application for presenting Stephanie Spears' *web development* Cu
 ## Setup/Installation Requirements
 
 * _If you wish to inspect the resume in greater detail, please clone the following repository from GitHub:_
-* `git clone https://github.com/Stephanie-Spears/Curriculum-Vitae.git`
+* `git clone https://github.com/Stephanie-Spears/homepage.git`
 
 ## GitHub Pages link
 
-View this site on GitHub Pages ***[here](https://stephanie-spears.github.io/Curriculum-Vitae/)***
+View this site on GitHub Pages ***[here](https://stephanie-spears.github.io/homepage/)***
 
 ## Support and contact details
 
@@ -32,8 +32,7 @@ _Please feel free to contact stephanie.spears1@gmail.com for any additional info
 
 ## Technologies Used
 
-* _JavaScript_
-* _Production.min_
+* _Particles.js_
 * _BootStrap_
 
 ### License

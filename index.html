@@ -6,83 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Stephanie Spears Resume, Portland Oregon, Web Developer, Programmer">
     <meta name="author" content="Stephanie Spears">
-
     <title>Stephanie Spears</title>
-
     <script src="js/jQuery.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="particles.js/particles.js"></script>
     <script src="js/scripts.js"></script>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Cabin+Sketch" rel="stylesheet">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="icon" href="../img/icons/gachapin1.png" type="image/png">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!--Navigation Content-->
-    <header id="main-header">
-      <nav id="siteNav" class="navbar navbar-toggleable-lg navbar-light bg-faded">
-        <div class="container-fluid">
-          <header id="navbar-header" class="navbar-header">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"><span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img src="img/gachapin1.png" width="30" height="30" alt="">
-            </a>
-          </header>
-          <div id="navbarNavAltMarkup" class="navbar-collapse collapse in">
-        <hr>
-        <ul id="main-nav" class="nav navbar-nav navbar-right">
-          <li>
-          <a class="nav-item nav-link active" href="/index/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-        </li>
-          <a class="nav-item nav-link" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Resume</a>
-          <a class="nav-item nav-link" href="#"><i class="fa fa-cubes" aria-hidden="true"></i> Projects</a>
-          <a class="nav-item nav-link" href="https://github.com/Stephanie-Spears/"><i class="fa fa-github-alt" aria-hidden="true"></i> GitHub</a>
-          <a class="nav-item nav-link" href="https://www.linkedin.com/in/stephanie-spears"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
-        </ul>
+    <nav id="siteNav" class="navbar navbar-toggleable-lg">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navLinks">
+        <!-- <span class="fa fa-bars fa-inverse" aria-hidden="true"></span> -->
+        <div id="nav-icon2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </div>
-    </nav>
-    <hr>
-    <!--Homepage Content-->
+      </button>
+      <a id="navBrand" class="navbar-brand" href="#"><!-- NOTE: onClick, toggle change in icon to diff gachapin/mukku-->
+        <img src="img/gachapin1.png" width="30" height="30" class="d-inline-block align-top" alt="">Stephanie Spears</a>
+        <div id="navLinks" class="collapse navbar-collapse">
+          <hr>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a class="nav-item nav-link" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Resume</a>
+            <a class="nav-item nav-link" href="#"><i class="fa fa-cubes" aria-hidden="true"></i> Projects</a>
+            <a class="nav-item nav-link group2" href="https://github.com/Stephanie-Spears/"><i class="fa fa-github-alt" aria-hidden="true"></i> GitHub</a>
+            <a class="nav-item nav-link group2" href="https://www.linkedin.com/in/stephanie-spears"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+          </div>
+        </div>
+      </nav>
+      <hr>
+      <div class="particles-js">
+
+
+      <!--Homepage Content-->
       <div id="homepageContent" class="row">
         <div class="col">
           <h1>Optimizing Your Next Project</h1>
         </div>
       </div>
-
-    </header>
-    <hr>
-    <!--end Homepage Content-->
-
-    <!--Resume Content-->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <header>
-            <h1 id="name">Stephanie Spears </h1><span id="title">Web Developer</span>
-          </header>
-        </div>
-      </div>
+      <hr>
     </div>
-    <hr>
-    <!--end Resume Content -->
+      <!--end Homepage Content-->
 
-
-    <!-- <div class="container">
-      <div class="row">
+      <!--Resume Content-->
+      <div class="container">
+        <div class="row">
           <div class="col">
-          <header>
-            <h1 id="name">Stephanie Spears</h1>
-            <span>Web Developer</span><hr>
-          </header>
+            <header>
+              <!-- <h1 id="name">Stephanie Spears </h1><span id="title">Web Developer</span> -->
+            </header>
+          </div>
         </div>
       </div>
-    </div> -->
+      <hr>
+      <!--end Resume Content -->
+
+
+      <!-- <div class="container">
+      <div class="row">
+      <div class="col">
+      <header>
+      <h1 id="name">Stephanie Spears</h1>
+      <span>Web Developer</span><hr>
+    </header>
+  </div>
+</div>
+</div> -->
 
   </body>
 </html>
