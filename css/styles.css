@@ -1,16 +1,20 @@
 #siteNav {
-  background-color: steelblue;
+  background-color: #484848;
+  border: 2px solid steelblue;
 }
 
 body {
-  background-image: url("../img/Arc.jpg");
-  background-color: #4a4a4a;
+  background-image: url("../../img/backgrounds/Arc.jpg");
 }
 
 #homepageContent{
-  text-align: center;
   color: #f3f3f3;
-  /*background-color: gray;*/
+background-color: grey;
+  width: 30%;
+  height: 30%;
+  margin-top: 375px;
+  margin-left: 25px;
+  /*overflow: visible;*/
 }
 
 #name {
