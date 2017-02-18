@@ -16,25 +16,19 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Cabin+Sketch" rel="stylesheet">
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="icon" href="../img/icons/gachapin1.png" type="image/png">
+    <link rel="icon" href="img/gachapin1.png" type="image/png">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!--Navigation Content-->
     <nav id="siteNav" class="navbar navbar-toggleable-lg">
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navLinks">
-        <!-- <span class="fa fa-bars fa-inverse" aria-hidden="true"></span> -->
-        <div id="nav-icon2">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a class="menu navToggleX"><span></span></a>
       </button>
-      <a id="navBrand" class="navbar-brand" href="#"><!-- NOTE: onClick, toggle change in icon to diff gachapin/mukku-->
-        <img src="img/gachapin1.png" width="30" height="30" class="d-inline-block align-top" alt="">Stephanie Spears</a>
+
+      <a id="navBrand" class="navbar-brand" href="#" onclick="changeIcon()"><!-- NOTE: onClick, toggle change in icon to diff gachapin/mukku-->
+        <img id="brandIcon" src="img/gachapin1.png" width="30" height="30" class="d-inline-block align-top" alt="">Stephanie Spears</a>
         <div id="navLinks" class="collapse navbar-collapse">
           <hr>
           <div class="navbar-nav">
@@ -65,7 +59,7 @@
         <div class="row">
           <div class="col">
             <header>
-              <!-- <h1 id="name">Stephanie Spears </h1><span id="title">Web Developer</span> -->
+              <!-- <h1 id="name">Stephanie Spears </h1><span id="title">Full Stack Developer</span> -->
             </header>
           </div>
         </div>
