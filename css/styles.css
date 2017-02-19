@@ -1,4 +1,4 @@
-  html,body {
+html,body {
   background-image: url("../img/Arc.jpg");
   font-family: Averia Serif Libre, sans-serif;
 }
@@ -16,8 +16,6 @@
 #navLinks{
   /*border: 1px solid red;*/
 }
-
-
 
 #navBrand,
 #navLinks a{
