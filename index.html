@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Stephanie Spears Resume, Portland Oregon, Web Developer, Programmer">
+    <meta name="keywords" content="Stephanie Spears Resume, Portland Oregon, Full Stack Developer, Programmer">
     <meta name="author" content="Stephanie Spears">
     <title>Stephanie Spears</title>
     <script src="js/jQuery.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="particles.js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="icon" href="img/gachapin1.png" type="image/png">
     <link href="css/styles.css" rel="stylesheet">
@@ -22,15 +23,24 @@
   <body>
     <!--Navigation Content-->
     <nav id="siteNav" class="navbar navbar-toggleable-lg">
+      <div id="navDiv" class="navbar-toggler navbar-toggler-right">
+        <div id="nav-icon" data-toggle="collapse" data-target="#navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navLinks">
-        <a class="menu navToggleX"><span></span></a>
-      </button>
+      <div id="navBrand" class="navbar-brand">
+        <h4>
+        <img id="brandIcon" src="img/gachapin1.png" width="40" height="40" class="d-inline-block align-bottom animated bounceIn" alt=""> Stephanie Spears</h4>
 
-      <a id="navBrand" class="navbar-brand" href="#" onclick="changeIcon()">
-        <img id="brandIcon" src="img/gachapin1.png" width="30" height="30" class="d-inline-block align-top" alt="">Stephanie Spears</a>
+      </div>
         <div id="navLinks" class="collapse navbar-collapse">
-          <hr>
+          <!-- <hr> -->
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
             <a class="nav-item nav-link" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Resume</a>
