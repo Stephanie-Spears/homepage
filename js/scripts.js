@@ -1,36 +1,29 @@
-function changeIcon(){
+function changeIcon(clickCount){
   var newIcon = document.getElementById("brandIcon");
   var iconArray = ["img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png", "img/gachapin1.png"];
+  var animationArray = [" rollIn", " flipInX", " rotateInUpLeft", " bounceInLeft", " fadeInRightBig"];
+
+  for (var i = 0; i < animatedArray.length; i++){
+    newIcon.className -= animationArray[i];
+  }
+  
   if (clickCount < iconArray.length){
     newIcon.src = iconArray[clickCount];
+    newIcon.className += animationArray[clickCount];
+    clickCount++;
   } else {
     clickCount = 0;
     newIcon.src = iconArray[clickCount];
+    newIcon.className += animationArray[clickCount];
   }
-  clickCount++;
 }
 
-var clickCount = 0;
 $(document).ready(function(){
   $("#nav-icon").click(function(){
     $(this).toggleClass("open");
   });
   $("#brandIcon").click(function(){
-    $("#brandIcon").removeClass("bounceIn rollIn flipInX rotateInUpLeft bounceInLeft fadeInRightBig");
-    if (clickCount === 0){
-      $("#brandIcon").addClass("rollIn");
-    } else if (clickCount === 1){
-      $("#brandIcon").addClass("flipInX");
-    } else if (clickCount === 2){
-      $("#brandIcon").addClass("rotateInUpLeft");
-    } else if (clickCount === 3){
-      $("#brandIcon").addClass("bounceInLeft");
-    } else if (clickCount === 4){
-      $("#brandIcon").addClass("fadeInRightBig");
-    }
-    changeIcon();
-
+    var clickCount = 0;
+    changeIcon(clickCount);
   });
-
-
 });
