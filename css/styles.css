@@ -184,7 +184,7 @@ canvas{
 
 
 /* RESUME */
-body,
+/*body,
 div,
 ul,
 li,
@@ -362,20 +362,19 @@ ul {
   display: none;
 }
 
-/*img {
+img {
   padding: 10px;
   width: 40%;
-}*/
+}
 
-/*span {
+span {
   padding: 5px;
-}*/
+}
 
 #footerMessage {
   text-align: center;
 }
 
-/* Media queries to handle various device widths */
 @media only screen and (max-width: 1024px) {
   #footerMessage {
     margin-top: 5%;
@@ -420,4 +419,4 @@ ul {
   .biopic {
     display: block;
   }
-}
+}*/
