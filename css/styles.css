@@ -53,8 +53,7 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
-  position: absolute;
+  /*position: absolute;*/
 }
 
 /* ---- MY STUFF----*/
@@ -73,10 +72,12 @@ canvas{
   bottom: 30px;
   left: 10px;
   z-index: 9999;
-
 }
-
-/*
+#resume-main{
+  position: relative;
+  color: steelblue;
+  /*z-index: 9999;*/
+}
 
 #name {
   font-size: 40px;
@@ -89,7 +90,7 @@ canvas{
   font-size: 16px;
   color: black;
   font-weight: normal;
-}*/
+}
 
 
 /*navbar icon*/
@@ -178,4 +179,5 @@ canvas{
 #nav-icon.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 29px;
+}
 }
