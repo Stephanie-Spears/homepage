@@ -31,12 +31,8 @@ $(document).ready(function(){
   });
   var clickCount = 0;
   $("#brandIcon").click(function(){
-    $("#brandIcon").removeClass(" bounceIn rollIn flipInX bounceInLeft fadeInRightBig");
-
+    $(this).removeClass("bounceIn rollIn flipInX bounceInLeft fadeInRightBig");
     clickCount = changeIcon(clickCount);
-
-    alert(clickCount);
   });
-
 
 });
