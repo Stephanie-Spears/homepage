@@ -55,11 +55,9 @@ canvas{
   height: 100%;
   position: absolute;
 }
-/**:hover{
-  border: 2px solid pink;
-}*/
+
 #site-nav {
-  background-color: rgba(111, 119, 132, 0.8);
+  background-color: rgba(111, 119, 132, 0.3);
 }
 #nav-links hr {
   border-top: 2px solid white;
@@ -71,8 +69,10 @@ canvas{
   color: blue;
 }
 
-#homepage-content h1 {
-  z-index: 9999;
+#homepage-content {
+  position: absolute;
+  bottom: 75px;
+  left: 75px;
 }
 
 
