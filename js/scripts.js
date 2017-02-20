@@ -34,5 +34,10 @@ $(document).ready(function(){
     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
     clickCount = changeIcon(clickCount);
   });
+  $("#resume-btn").click(function(){
+    $("html,body").animate({
+      scrollTop: $("#resume-main").offset().top},"slow");
+    });
+
 
 });

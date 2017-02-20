@@ -66,22 +66,24 @@ canvas{
 
 #homepage-content{
   bottom: 30px;
-  left: 10px;
+  left: 30px;
   /*z-index: 9999;*/
   position: absolute;
 }
 
 
 #resume-main{
-  position: relative;
   background-image: url("../img/Arc2.jpg");
-  /*bottom: -500px;*/
-  /*position: absolute;*/
-  color: steelblue;
-  /*z-index: 9999;*/
-}#name {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  border-top: 5px solid black;
+}
+#name {
   font-size: 40px;
-  color: steelblue;
+
   font-weight: bold;
   display: inline;
 }
@@ -91,12 +93,6 @@ canvas{
   color: black;
   font-weight: normal;
 }
-
-
-
-
-
-
 
 
 
