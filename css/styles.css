@@ -57,17 +57,17 @@ canvas{
 }
 
 /* ---- MY STUFF----*/
-#siteNav {
+#site-nav {
   background-color: rgba(111, 119, 132, 0.9);
 }
-#navLinks a{
+#nav-links a{
   color: #fafafa
 }
 
-#navLinks a.group2{
+#nav-links a.group2{
   color: blue;
 }
-#homepageContent{
+#homepage-content{
   position: absolute;
   bottom: 30px;
   left: 10px;
