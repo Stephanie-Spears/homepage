@@ -24,11 +24,12 @@ li{list-style:none}*/
 /* ---- base ---- */
 
 html,body{
+  background-image: url('../img/Arc.jpg');
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 	width:100%;
 	height:100%;
-  background-color: steelblue;
 }
 
 html{
@@ -50,19 +51,24 @@ canvas{
 #particles-js{
   width: 100%;
   height: 100%;
-  background-image: url('../img/Arc.jpg');
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
+  /*background-position: 50% 50%;*/
+
   /*position: absolute;*/
 }
 
 /* ---- MY STUFF----*/
 #site-nav {
-  background-color: rgba(111, 119, 132, 0.9);
+  background-color: rgba(111, 119, 132, 0.5);
 }
+
+#nav-links hr {
+  border-top: 2px solid white;
+}
+
 #nav-links a{
-  color: #fafafa
+  color: #fafafa;
 }
 
 #nav-links a.group2{
@@ -75,7 +81,8 @@ canvas{
   z-index: 9999;
 }
 #resume-main{
-  position: relative;
+  bottom: -500px;
+  position: absolute;
   color: steelblue;
   /*z-index: 9999;*/
 }
@@ -96,7 +103,6 @@ canvas{
 
 /*navbar icon*/
 #nav-icon {
-  /*left: 20px;*/
   width: 60px;
   height: 45px;
   position: relative;
