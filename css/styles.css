@@ -50,25 +50,29 @@ canvas{
   width: 100%;
   height: 100%;
 }
-
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/**:hover{
+  border: 2px solid pink;
+}*/
 #site-nav {
-  background-color: rgba(111, 119, 132, 0.6);
+  background-color: rgba(111, 119, 132, 0.8);
 }
 #nav-links hr {
   border-top: 2px solid white;
 }
 #nav-links a{
-  color: #fafafa;
+  color: #f8f8f8;
 }
 #nav-links a.group2{
   color: blue;
 }
 
-#homepage-content{
-  bottom: 30px;
-  left: 30px;
-  /*z-index: 9999;*/
-  position: absolute;
+#homepage-content h1 {
+  z-index: 9999;
 }
 
 
