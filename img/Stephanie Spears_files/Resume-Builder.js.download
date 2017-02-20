@@ -1,15 +1,15 @@
 var bio = {
   "name": "Stephanie Spears",
-  "role": "Web Developer",
+  "role": " Full Stack Developer",
   "contacts": {
-    "mobile": "503-459-3847",
-    "email": "Stephanie.Spears1@gmail.com",
-    "github": "https://github.com/Stephanie-Spears",
-    "location": "Portland, Oregon"
+    "mobile": " 503-459-3847",
+    "email": " Stephanie.Spears1@gmail.com",
+    "github": " https://github.com/Stephanie-Spears",
+    "location": " Portland, Oregon"
   },
   "welcomeMessage": "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do. -Pele",
 
-  "languages": ["C++", "PHP", "Drupal", "HTML/CSS/JavaScript", "Java", "Visual Basic", "Python", "SQL", "C#", "Ruby", "Swift" ],
+  // "languages": ["C++", "PHP", "Drupal", "HTML/CSS/JavaScript", "Java", "Visual Basic", "Python", "SQL", "C#", "Ruby", "Swift" ],
 
   "skills": ["Excellent written and verbal communication", "Highly organized and detail-oriented", "Learn and adapt quickly", "Good sense of humor and positive attitude", "Analytical thinking and research ability", "Work effectively as part of a team or independently"],
 
@@ -32,16 +32,16 @@ function displayBio(){
     var formattedWelcomeMessage=HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedBioPic, formattedWelcomeMessage);
 
-    if (bio.languages.length > 0) {
-      $("#headerLanguages").append(HTMLlanguagesStart);
-      for (var x = 0; x < bio.languages.length; x++){
-        alert(bio.languages[x]);
-        var formattedLanguages=HTMLlanguages.replace("%data%", bio.langauges); // NOTE: breaks if I do bio.langauges[x]...debug
-        $("#langauges").append(formattedLanguages);
-      }
-    }
+    // if (bio.languages.length > 0) {
+    //   $("#headerLanguages").append(HTMLlanguagesStart);
+    //   for (var x = 0; x < bio.languages.length; x++){
+    //
+    //     var formattedLanguages=HTMLlanguages.replace("%data%", bio.langauges); // NOTE: breaks if I do bio.langauges[x]...debug
+    //     $("#langauges").append(formattedLanguages);
+    //   }
+    // }
     if (bio.skills.length > 0) {
-      $("#headerSkills").append(HTMLskillsStart);
+      $("#header").append(HTMLskillsStart);
       for (var e = 0; e < bio.skills.length; e++){
         alert(bio.skills[e]);
         var formattedSkills=HTMLskills.replace("%data%", bio.skills[e]);
@@ -323,13 +323,13 @@ displayProjects();
 // FUNCTIONS
 
 //takes in a string of two names and capitalizes the last name
-function inName(name) {
-  name = name.trim().split(" "); //trim will take away the white space in the front and back of the name string. split it at the space char
-  name[1] = name[1].toUpperCase();
-  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase(); //capitalizes first name's first letter, appends it to the remainder of the first name which it ensures is lower case.
-  return name[0] + " " + name[1];
-}
-$("#main").append(internationalizeButton);
+// function inName(name) {
+//   name = name.trim().split(" "); //trim will take away the white space in the front and back of the name string. split it at the space char
+  // name[1] = name[1].toUpperCase();
+  // name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase(); //capitalizes first name's first letter, appends it to the remainder of the first name which it ensures is lower case.
+//   return name[0] + " " + name[1];
+// }
+// $("#main").append(internationalizeButton);
 
 // //displays where the user clicks on webpage--inside inspect
 // $(document).click(function(loc) {
@@ -339,15 +339,15 @@ $("#main").append(internationalizeButton);
 // });
 
 //creates an array of all work locations
-function locationizer(work_obj) {
-  var locationArray = [];
-  for (var i = 0; i < work.jobs.length; i++) {
-    var newLocation = work_obj.jobs[i].location;
-    locationArray.push(newLocation);
-  }
-  return locationArray;
-}
-locationizer(work);
+// function locationizer(work_obj) {
+//   var locationArray = [];
+//   for (var i = 0; i < work.jobs.length; i++) {
+//     var newLocation = work_obj.jobs[i].location;
+//     locationArray.push(newLocation);
+//   }
+//   return locationArray;
+// }
+// locationizer(work);
 
 //invoke the map in helper.js
-$("#mapDiv").append(googleMap);
+// $("#mapDiv").append(googleMap);
