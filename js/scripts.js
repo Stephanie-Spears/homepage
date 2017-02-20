@@ -12,7 +12,7 @@
 function changeIcon(clickCount){
    var newIcon = document.getElementById("brandIcon");
   var iconArray = ["img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png", "img/gachapin1.png"];
-  var animationArray = [" rollIn ", " flipInX ", " bounceInLeft ", " fadeInRightBig "];
+  var animationArray = [" rollIn ", " flipInX ", " bounceInLeft ", " fadeInRight "];
   if (clickCount < iconArray.length){
     newIcon.src = iconArray[clickCount];
     newIcon.className += animationArray[clickCount];
@@ -31,7 +31,7 @@ $(document).ready(function(){
   });
   var clickCount = 0;
   $("#brandIcon").click(function(){
-    $(this).removeClass("bounceIn rollIn flipInX bounceInLeft fadeInRightBig");
+    $(this).removeClass("bounceIn rollIn flipInX bounceInLeft fadeInRight");
     clickCount = changeIcon(clickCount);
   });
 
