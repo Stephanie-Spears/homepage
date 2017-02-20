@@ -21,8 +21,8 @@ particlesJS('particles-js',
         "value": "#ffffff"
       },
       "shape": {
-        "type": "polygon",
-        // "type": "image",
+        // "type": "polygon",
+        "type": "image",
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -31,8 +31,8 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
-          // "src": "img/gachapin1.png",
+          // "src": "img/github.svg",
+          "src": "img/gachapin1.png",
           "width": 100,
           "height": 100
         }
@@ -101,7 +101,9 @@ particlesJS('particles-js',
         },
         "bubble": {
           "distance": 400,
-          "size": 8,
+          // "size": 8,
+          "size": 20,
+
           "duration": 2,
           "opacity": 0.1,
           "speed": 3
