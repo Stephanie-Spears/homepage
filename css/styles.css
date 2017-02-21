@@ -31,8 +31,6 @@ html,body{
 }
 
 body{
-  font-family: Averia Serif Libre, sans-serif;
-  color: #fafafa;
 }
 
 canvas{
@@ -43,7 +41,9 @@ canvas{
 /* ---- MY STUFF----*/
 
 #homepage-main{
-  background-image: url("../img/Arc.jpg");
+  font-family: Averia Serif Libre, sans-serif;
+  color: #fafafa;
+  /*background-image: url("../img/Arc1.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -57,7 +57,9 @@ canvas{
 }
 
 #site-nav {
-  background-color: rgba(111, 119, 132, 0.3);
+  /*position: fixed;
+  width: 100%;*/
+  background-color: rgba(111, 119, 132, 0.7);
 }
 #nav-links hr {
   border-top: 2px solid white;
@@ -77,6 +79,8 @@ canvas{
 
 
 #resume-main{
+  text-align: center;
+  color: #f8f8f8;
   background-image: url("../img/Arc2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
