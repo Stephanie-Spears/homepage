@@ -43,7 +43,7 @@ canvas{
 #homepage-main{
   font-family: Averia Serif Libre, sans-serif;
   color: #fafafa;
-  /*background-image: url("../img/Arc1.jpg");*/
+  background-image: url("../img/Arc1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -78,10 +78,11 @@ canvas{
 }
 
 
-#resume-main{
+#cv-main{
   text-align: center;
   color: #f8f8f8;
-  background-image: url("../img/Arc2.jpg");
+  background-color: grey;
+  /*background-image: url("../img/Arc2.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -89,7 +90,7 @@ canvas{
   height: 100%;
   border-top: 5px solid black;
 }
-#name {
+/*#name {
   font-size: 40px;
 
   font-weight: bold;
@@ -100,7 +101,7 @@ canvas{
   font-size: 16px;
   color: black;
   font-weight: normal;
-}
+}*/
 
 
 
