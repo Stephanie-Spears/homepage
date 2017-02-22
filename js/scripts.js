@@ -27,7 +27,7 @@ var myHomepage = function(){
 
     }
 
-    setInterval(function(){rotateGallery();},2500);
+    setInterval(function(){rotateGallery();},25000);
   };
 
   setBackground();
