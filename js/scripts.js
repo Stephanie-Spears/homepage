@@ -1,10 +1,3 @@
-// var index = 0;
-// var gallerySource = ["url('img/Arc1.jpg')", "url('img/Arc2.jpg'", "url('img/Juso.jpg'", "url('img/Forest.jpg'"];
-// alert(document.getElementById("homepage-main").style.backgroundImage);
-// document.getElementById("homepage-main").style.backgroundImage = gallerySource[index];
-
-// alert(document.getElementById("homepage-main").style.backgroundImage);
-// document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
 var myHomepage = function(){
   //"private" variables:
 
