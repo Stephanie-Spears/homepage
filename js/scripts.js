@@ -1,4 +1,7 @@
 
+
+document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
+
 // var myHomepage = function(){
 //   //"private" variables:
 //
