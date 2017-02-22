@@ -4,8 +4,6 @@ var myHomepage = function(){
   //"private" methods:
   var setBackground = function(){
     var i = 0;
-    // var myBackgroundImage = document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
-
     function rotateGallery(){
       //infinite i count;
 
@@ -13,13 +11,7 @@ var myHomepage = function(){
       var index = i++ % gallerySource.length;
 
       document.getElementById("homepage-main").style.backgroundImage = gallerySource[index];
-
-      // var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
-      // var index = i++ % gallerySource.length;
-      // $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
-
     }
-
     setInterval(function(){rotateGallery();},25000);
   };
 
