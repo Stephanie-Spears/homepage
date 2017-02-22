@@ -4,18 +4,14 @@ var myHomepage = function(){
 
   //"private" methods:
     var rotateGallery = function(){
-      var x = ("homepage-main").css;
-      x.css.backgroundImage = "url(img/Arc1.jpg)";
-      // var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
-      // var index = i++ % gallerySource.length;
-      // $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
-      // console.log(i);
-    };
-    var myInterval = function(){
-      setInterval(function(){rotateGallery();},25000);
+      var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
+      var index = i++ % gallerySource.length;
+      $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
     };
 
-    rotateGallery();
+    var myInterval = function(){
+      setInterval(function(){rotateGallery();},2500);
+    };
 
 
   // $("#nav-icon").click(function(){
