@@ -14,12 +14,11 @@ var myHomepage = function(){
     // var myBackgroundImage = document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
 
     function rotateGallery(){
-      //infinite i loop;
+      //infinite i count;
 
+      var gallerySource = ["url('img/Arc1.jpg')", "url('img/Arc2.jpg'", "url('img/Juso.jpg'", "url('img/Forest.jpg'"];
       var index = i++ % gallerySource.length;
 
-      var gallerySource = ["url('../img/Arc1.jpg')", "url('img/Arc2.jpg'", "url('img/Juso.jpg'", "url('img/Forest.jpg'"];
-      alert(document.getElementById("homepage-main").style.backgroundImage);
       document.getElementById("homepage-main").style.backgroundImage = gallerySource[index];
 
       // var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
@@ -28,7 +27,7 @@ var myHomepage = function(){
 
     }
 
-    // setInterval(function(){rotateGallery();},2500);
+    setInterval(function(){rotateGallery();},2500);
   };
 
   setBackground();
