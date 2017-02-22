@@ -1,48 +1,54 @@
+// var index = 0;
+// var gallerySource = ["url('img/Arc1.jpg')", "url('img/Arc2.jpg'", "url('img/Juso.jpg'", "url('img/Forest.jpg'"];
+// alert(document.getElementById("homepage-main").style.backgroundImage);
+// document.getElementById("homepage-main").style.backgroundImage = gallerySource[index];
+
+// alert(document.getElementById("homepage-main").style.backgroundImage);
+// document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
+var myHomepage = function(){
+  //"private" variables:
+
+  //"private" methods:
+  var setBackground = function(){
+    var i = 0;
+    // var myBackgroundImage = document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
+
+    function rotateGallery(){
+      //infinite i loop;
+
+      var index = i++ % gallerySource.length;
+
+      var gallerySource = ["url('../img/Arc1.jpg')", "url('img/Arc2.jpg'", "url('img/Juso.jpg'", "url('img/Forest.jpg'"];
+      alert(document.getElementById("homepage-main").style.backgroundImage);
+      document.getElementById("homepage-main").style.backgroundImage = gallerySource[index];
+
+      // var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
+      // var index = i++ % gallerySource.length;
+      // $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
+
+    }
+
+    // setInterval(function(){rotateGallery();},2500);
+  };
+
+  setBackground();
 
 
-document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
+  // $("#nav-icon").click(function(){
+  //     $(this).toggleClass("open");
+  //   });
+  //   var clickCount = 0;
+  //   $("#brand-icon").click(function(){
+  //     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
+  //     clickCount = changeIcon(clickCount);
+  //   });
+  //   $("#resume-btn").click(function(){
+  //     $("html,body").animate({
+  //       scrollTop: $("#resume-main").offset().top},"slow");
+  //     });
 
-// var myHomepage = function(){
-//   //"private" variables:
-//
-//   //"private" methods:
-//   var setBackground = function(){
-//     // var i = 0;
-//     //
-//     // function rotateGallery(){
-//     //   //infinite i loop;
-//     //   var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
-//     //   var index = i++ % gallerySource.length;
-//     //   $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
-//     //   console.log(i);
-//     //   if (i > gallerySource.length)
-//     //   {
-//     //     i = 1;
-//     //
-//     //   }
-//     // }
-//     //
-//     // setInterval(function(){rotateGallery();},2500);
-//   };
-//
-//   setBackground();
-//
-//   // $("#nav-icon").click(function(){
-//   //     $(this).toggleClass("open");
-//   //   });
-//   //   var clickCount = 0;
-//   //   $("#brand-icon").click(function(){
-//   //     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
-//   //     clickCount = changeIcon(clickCount);
-//   //   });
-//   //   $("#resume-btn").click(function(){
-//   //     $("html,body").animate({
-//   //       scrollTop: $("#resume-main").offset().top},"slow");
-//   //     });
-//
-//
-// }(); // the parens here cause the anonymous function to execute and return
-//
+}(); // the parens here cause the anonymous function to execute and return
+
 
 // var i = 0;
 
