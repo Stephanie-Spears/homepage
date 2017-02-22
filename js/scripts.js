@@ -1,39 +1,39 @@
-
 var myHomepage = (function(){
   //"private" variables:
   var i = 0;
+  var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
 
   //"private" methods:
-  var setBackground = function(){
-    function rotateGallery(){
-      // NOTE: i continutes to loop, doesn't reset
-      var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
-      var index = i++ % gallerySource.length;
-      $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
-    }
-    setInterval(function(){rotateGallery();},15000);
-  };
+  // var myVar = setInterval(function(){rotateGallery();},2500);
+    var rotateGallery = function(){
+      console.log(i);
+      var myInterval = setInterval(function(){
+        var index = i++ % gallerySource.length;
+        $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
 
-  $("#nav-icon").click(function(){
-      $(this).toggleClass("open");
-    });
-    var clickCount = 0;
-    $("#brand-icon").click(function(){
-      $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
-      clickCount = changeIcon(clickCount);
-    });
-    $("#resume-btn").click(function(){
-      $("html,body").animate({
-        scrollTop: $("#resume-main").offset().top},"slow");
       });
+    };
+
+
+
+  // $("#nav-icon").click(function(){
+  //     $(this).toggleClass("open");
+  //   });
+  //   var clickCount = 0;
+  //   $("#brand-icon").click(function(){
+  //     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
+  //     clickCount = changeIcon(clickCount);
+  //   });
+  //   $("#resume-btn").click(function(){
+  //     $("html,body").animate({
+  //       scrollTop: $("#resume-main").offset().top},"slow");
+  //     });
 
 
 
 
-  setBackground();
+  // setBackground();
 })(); // the parens here cause the anonymous function to execute and return
-
-
 
 
 // var i = 0;
