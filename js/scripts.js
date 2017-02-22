@@ -1,20 +1,17 @@
 var myHomepage = (function(){
   //"private" variables:
   var i = 0;
-  var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
 
   //"private" methods:
-  // var myVar = setInterval(function(){rotateGallery();},2500);
-    var rotateGallery = function(){
-      console.log(i);
-      var myInterval = setInterval(function(){
-        var index = i++ % gallerySource.length;
-        $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
-
-      });
-    };
-
-
+  var setBackground = function(){
+    function rotateGallery(){
+      // NOTE: i continutes to loop, doesn't reset
+      var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
+      var index = i++ % gallerySource.length;
+      $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
+    }
+    var myVar = setInterval(function(){rotateGallery();},1500);
+  };
 
   // $("#nav-icon").click(function(){
   //     $(this).toggleClass("open");
@@ -32,7 +29,7 @@ var myHomepage = (function(){
 
 
 
-  // setBackground();
+  setBackground();
 })(); // the parens here cause the anonymous function to execute and return
 
 
