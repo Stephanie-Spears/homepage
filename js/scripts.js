@@ -1,34 +1,45 @@
-var myHomepage = function(){
-  //"private" variables:
-  var i = 0;
 
-  //"private" methods:
-    var rotateGallery = function(){
-      var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
-      var index = i++ % gallerySource.length;
-      $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
-    };
-
-    var myInterval = function(){
-      setInterval(function(){rotateGallery();},2500);
-    };
-
-
-  // $("#nav-icon").click(function(){
-  //     $(this).toggleClass("open");
-  //   });
-  //   var clickCount = 0;
-  //   $("#brand-icon").click(function(){
-  //     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
-  //     clickCount = changeIcon(clickCount);
-  //   });
-  //   $("#resume-btn").click(function(){
-  //     $("html,body").animate({
-  //       scrollTop: $("#resume-main").offset().top},"slow");
-  //     });
-
-}(); // the parens here cause the anonymous function to execute and return
-
+// var myHomepage = function(){
+//   //"private" variables:
+//
+//   //"private" methods:
+//   var setBackground = function(){
+//     // var i = 0;
+//     //
+//     // function rotateGallery(){
+//     //   //infinite i loop;
+//     //   var gallerySource = ["img/Arc1.jpg", "img/Arc2.jpg", "img/Juso.jpg", "img/Forest.jpg"];
+//     //   var index = i++ % gallerySource.length;
+//     //   $("#homepage-main").css("background-image","url('"+ gallerySource[index] +"')");
+//     //   console.log(i);
+//     //   if (i > gallerySource.length)
+//     //   {
+//     //     i = 1;
+//     //
+//     //   }
+//     // }
+//     //
+//     // setInterval(function(){rotateGallery();},2500);
+//   };
+//
+//   setBackground();
+//
+//   // $("#nav-icon").click(function(){
+//   //     $(this).toggleClass("open");
+//   //   });
+//   //   var clickCount = 0;
+//   //   $("#brand-icon").click(function(){
+//   //     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
+//   //     clickCount = changeIcon(clickCount);
+//   //   });
+//   //   $("#resume-btn").click(function(){
+//   //     $("html,body").animate({
+//   //       scrollTop: $("#resume-main").offset().top},"slow");
+//   //     });
+//
+//
+// }(); // the parens here cause the anonymous function to execute and return
+//
 
 // var i = 0;
 
