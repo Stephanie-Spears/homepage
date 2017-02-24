@@ -17,7 +17,7 @@ var myHomepage = function(){
       }
       i++;
     }
-    var galleryInterval = setInterval(function(){rotateGallery();},2500);
+    var galleryInterval = setInterval(function(){rotateGallery();},25000);
   };
 
 
