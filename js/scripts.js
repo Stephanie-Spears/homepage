@@ -35,18 +35,19 @@ var myHomepage = function(){
     clickCount++;
   };
 
-  $(document).ready(function(){
+  window.onload = function(){
     setBackground();
     $("#nav-icon").click(function(){
-      $(this).toggleClass("open");
+      $("#nav-icon").toggleClass("open");
     });
     $("#brand-icon").click(function(){
       setBrand();
     });
-    $("#resume-btn").click(function(){
+    $("#cv-btn").click(function(){
       $("html,body").animate({
-        scrollTop: $("#resume-main").offset()},"slow");
+        scrollTop: $("#cv-main").offset().top},"slow");
       });
-    });
+    };
+
 
 }(); // the parens here cause the anonymous function to execute and return
