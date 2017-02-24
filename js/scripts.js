@@ -7,12 +7,17 @@ var myHomepage = function(){
     function rotateGallery(){
       //BUG: infinite i count;
       var gallerySource = ["url(img/Arc1.jpg)", "url(img/Arc2.jpg)", "url(img/Juso.jpg)", "url(img/Forest.jpg)"];
-      var index = i++ % gallerySource.length;
-
-      $("#homepage-main").css("background-image", gallerySource[index]);
-      // document.getElementById("homepage-main").style.backgroundImage = gallerySource[index];
+      // var index = i++ % gallerySource.length;
+      if (i < gallerySource.length){
+        $("#homepage-main").css("background-image", gallerySource[i]);
+      }
+      else{
+        i = 0;
+        $("#homepage-main").css("background-image", gallerySource[i]);
+      }
+      i++;
     }
-    var galleryInterval = setInterval(function(){rotateGallery();},25000);
+    var galleryInterval = setInterval(function(){rotateGallery();},2500);
   };
 
 
@@ -28,7 +33,6 @@ var myHomepage = function(){
       newIcon.src = iconArray[clickCount];
       newIcon.className += animationArray[clickCount];
     }
-    console.log(clickCount);
     clickCount++;
     // return clickCount;
   }
