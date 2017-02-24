@@ -7,133 +7,76 @@
     <meta name="keywords" content="Stephanie Spears Resume, Portland Oregon, Full Stack Developer, Programmer">
     <meta name="author" content="Stephanie Spears">
     <title>Stephanie Spears</title>
-    <script src="js/jQuery.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/helper.js"></script>
-    <script src="js/Resume-Builder.js"></script>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="icon" href="img/gachapin1.png" type="image/png">
     <link href="css/styles.css" rel="stylesheet">
-    <!-- <link href="css/styles2.css" rel="stylesheet"> -->
-
   </head>
   <body>
-  <div id="homepage-main" style="background-image: url('img/Forest.jpg')">
+    <div id="homepage-main" style="background-image: url('img/Forest.jpg')">
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
 
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
+      <!--Navigation Content-->
+      <nav id="site-nav" class="navbar navbar-toggleable-lg transparent">
+        <div class="navbar-toggler navbar-toggler-right">
+          <div id="nav-icon" data-toggle="collapse" data-target="#nav-links" class="animated rubberBand">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navbar-brand">
+          <h4><img id="brand-icon" src="img/gachapin1.png" width="40" height="40" class="d-inline-block align-bottom animated bounceIn" alt=""> Stephanie Spears</h4>
+        </div>
+        <div id="nav-links" class="collapse navbar-collapse">
+          <hr>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#homepage-main"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a id="resume-btn" class="nav-item nav-link" href="#cv-main"><i class="fa fa-briefcase" aria-hidden="true"></i> CV</a>
+            <a class="nav-item nav-link" href="https://stephanie-spears.github.io/stephanie-spears/"><i class="fa fa-cubes" aria-hidden="true"></i> Portfolio</a>
+            <a class="nav-item nav-link group2" href="https://github.com/Stephanie-Spears/"><i class="fa fa-github-alt" aria-hidden="true"></i> GitHub</a>
+            <a class="nav-item nav-link group2" href="https://www.linkedin.com/in/stephanie-spears"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+          </div>
+        </div>
+      </nav>
 
-    <!--Navigation Content-->
-    <nav id="site-nav" class="navbar navbar-toggleable-lg transparent">
-      <div class="navbar-toggler navbar-toggler-right">
-        <div id="nav-icon" data-toggle="collapse" data-target="#nav-links" class="animated rubberBand">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+      <!--Homepage Content-->
+      <div id="homepage-content">
+        <div class="row">
+          <div class="col">
+            <h1>Optimizing <br> Your Next <br> Project</h1>
+          </div>
         </div>
       </div>
-      <div class="navbar-brand">
-        <h4><img id="brand-icon" src="img/gachapin1.png" width="40" height="40" class="d-inline-block align-bottom animated bounceIn" alt=""> Stephanie Spears</h4>
-      </div>
-      <div id="nav-links" class="collapse navbar-collapse">
-        <hr>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#homepage-main"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-          <a id="resume-btn" class="nav-item nav-link" href="#cv-main"><i class="fa fa-briefcase" aria-hidden="true"></i> CV</a>
-          <a class="nav-item nav-link" href="https://stephanie-spears.github.io/stephanie-spears/"><i class="fa fa-cubes" aria-hidden="true"></i> Portfolio</a>
-          <a class="nav-item nav-link group2" href="https://github.com/Stephanie-Spears/"><i class="fa fa-github-alt" aria-hidden="true"></i> GitHub</a>
-          <a class="nav-item nav-link group2" href="https://www.linkedin.com/in/stephanie-spears"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
-        </div>
-      </div>
-    </nav>
+    </div>
 
-    <!--Homepage Content-->
-    <div id="homepage-content">
+    <!--Resume Content-->
+    <div id="cv-main" class="container">
       <div class="row">
         <div class="col">
-          <h1>Optimizing <br> Your Next <br> Project</h1>
+          <header>
+            <h1 id="name">Stephanie Spears </h1><span id="title">Full Stack Developer</span>
+          </header>
         </div>
       </div>
-      <!-- scripts -->
-      <script src="js/app.js"></script>
     </div>
-  </div>
-  <!--end Homepage-->
-
-  <!--Resume Content-->
-  <div id="cv-main" class="container">
-    <div class="row">
-      <div class="col">
-        <header>
-          <h1 id="name">Stephanie Spears </h1><span id="title">Full Stack Developer</span>
-        </header>
-      </div>
-    </div>
-  </div>
-  <hr>
-
-      <!--
-          <div id="resume-main" class="container">
-
-            <div id="header" class="center-content clear-fix">
-              <ul id="topContacts" class="flex-box"></ul>
-            </div>
-            <div id="headerSkills" class="center-content clear-fix"></div>
-
-            <div style="clear: both;"></div>
-            <div id="workExperience" class="gray">
-              <h2>Work Experience</h2>
-            </div>
-
-            <div id="projects">
-            <h2>Projects</h2>
-          </div>
-
-          <div id="education" class="gray">
-            <h2>Education</h2>
-          </div>
-
-          <div id="completedCourses">
-          <h2>Completed Programming Courses</h2>
-        </div>
-
-      <div id="footerMessage" class="dark-gray">
-        <h2 class="blue center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box"></ul>
-      </div>
-      </div>
-      <script src="js/Resume-Builder.js"></script> -->
+    <hr>
 
 
-
-      <!-- <div class="container">
-      <div class="row">
-      <div class="col">
-      <header>
-      <h1 id="name">Stephanie Spears</h1>
-      <span>Web Developer</span><hr>
-      </header>
-      </div>
-      </div>
-      </div> -->
-
-      <script type="text/javascript" src="js/scripts.js"></script>
-      <!-- <script type="text/javascript">
-      alert(document.getElementById("homepage-main").style.backgroundImage);
-      document.getElementById("homepage-main").style.backgroundImage = "url('img/Arc1.jpg')";
-
-      </script> -->
-
+    <!-- scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
 

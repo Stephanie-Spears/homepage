@@ -1,9 +1,9 @@
 var myHomepage = function(){
   //"private" variables:
-
+  var i = 0;
+  var clickCount = 0;
   //"private" methods:
   var setBackground = function(){
-    var i = 0;
     function rotateGallery(){
       //infinite i count;
 
@@ -14,22 +14,19 @@ var myHomepage = function(){
     }
     setInterval(function(){rotateGallery();},25000);
   };
-
   setBackground();
 
-
-  // $("#nav-icon").click(function(){
-  //     $(this).toggleClass("open");
-  //   });
-  //   var clickCount = 0;
-  //   $("#brand-icon").click(function(){
-  //     $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
-  //     clickCount = changeIcon(clickCount);
-  //   });
-  //   $("#resume-btn").click(function(){
-  //     $("html,body").animate({
-  //       scrollTop: $("#resume-main").offset().top},"slow");
-  //     });
+  $("#nav-icon").click(function(){
+      $(this).toggleClass("open");
+    });
+    $("#brand-icon").click(function(){
+      $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
+      clickCount = changeIcon(clickCount);
+    });
+    $("#resume-btn").click(function(){
+      $("html,body").animate({
+        scrollTop: $("#resume-main").offset().top},"slow");
+      });
 
 }(); // the parens here cause the anonymous function to execute and return
 
