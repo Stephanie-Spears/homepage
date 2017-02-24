@@ -20,11 +20,10 @@ canvas{
 }
 
 /* ---- MAIN ----*/
-
 #homepage-main{
   font-family: Averia Serif Libre, sans-serif;
   color: #fafafa;
-  /*background-image: url("../img/Forest.jpg");*/
+  background-image: url("../img/Forest.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;

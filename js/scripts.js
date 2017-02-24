@@ -5,19 +5,26 @@ var myHomepage = function(){
   //"private" methods
   var setBackground = function(){
     var i = 0;
+
     function rotateGallery(){
       var gallerySource = ["url(img/Arc1.jpg)", "url(img/Arc2.jpg)", "url(img/Juso.jpg)", "url(img/Forest.jpg)"];
-      if (i < gallerySource.length){
-        $("#homepage-main").css("background-image", gallerySource[i]);
-        $("#homepage-main").show().fadeIn(1000).fadeOut(1000)
-      }
-      else{
+      if (i === gallerySource.length){
         i = 0;
-        $("#homepage-main").css("background-image", gallerySource[i]);
       }
+        // $("#homepage-main").css("background-image", gallerySource[i]);
+
+      $("#homepage-main").css("background-image", gallerySource[i]).fadeOut(0).fadeIn(4000);
       i++;
+
+      // console.log(i)
+      // $("#homepage-main").css("background-image", gallerySource[i]).fadeIn(1000).fadeOut(1000);
+      // var galleryInterval = setInterval(function(){rotateGallery();},1000);
+
+      // i++;
     }
-    var galleryInterval = setInterval(function(){rotateGallery();},25000);
+    // rotateGallery();
+    var galleryInterval = setInterval(function(){rotateGallery();},5000);
+    // clearInterval(galleryInterval);
   };
 
   var setBrand = function(){
