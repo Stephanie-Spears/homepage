@@ -28,8 +28,9 @@ var myHomepage = function(){
       newIcon.src = iconArray[clickCount];
       newIcon.className += animationArray[clickCount];
     }
+    console.log(clickCount);
     clickCount++;
-    return clickCount;
+    // return clickCount;
   }
 
 
@@ -40,11 +41,13 @@ var myHomepage = function(){
     });
     $("#brand-icon").click(function(){
       $(this).removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
-      clickCount = changeIcon(clickCount);
+      // clickCount = changeIcon(clickCount);
+      changeIcon();
     });
     $("#resume-btn").click(function(){
+      //says top is undefined
       $("html,body").animate({
-        scrollTop: $("#resume-main").offset().top},"slow");
+        scrollTop: $("#resume-main").offset()},"slow");
       });
     });
 
