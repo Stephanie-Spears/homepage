@@ -9,6 +9,7 @@ var myHomepage = function(){
       var gallerySource = ["url(img/Arc1.jpg)", "url(img/Arc2.jpg)", "url(img/Juso.jpg)", "url(img/Forest.jpg)"];
       if (i < gallerySource.length){
         $("#homepage-main").css("background-image", gallerySource[i]);
+        $("#homepage-main").show().fadeIn(1000).fadeOut(1000)
       }
       else{
         i = 0;
