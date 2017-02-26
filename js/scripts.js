@@ -17,10 +17,10 @@ var myHomepage = function(){
   };
 
   var setBrand = function(){
-    $("#brand-icon").removeClass("bounceIn rollIn flipInX rotateIn rubberBand");
+    $("#brand-icon").removeClass("bounceIn rollIn flip rotateIn rubberBand");
     var newIcon = document.getElementById("brand-icon");
     var iconArray = ["img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png", "img/gachapin1.png"];
-    var animationArray = [" rollIn", " flipInX", " rotateIn", " rubberBand"];
+    var animationArray = [" rollIn", " flip", " rotateIn", " rubberBand"];
     if (clickCount < iconArray.length){
       newIcon.src = iconArray[clickCount];
       newIcon.className += animationArray[clickCount];
