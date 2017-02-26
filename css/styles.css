@@ -24,6 +24,16 @@ canvas{
   vertical-align:bottom;
 }
 
+h1{
+  display: inline;
+  font-size: 45px;
+  font-size: 5vmax;
+}
+
+hr {
+  border-top: 2px solid white;
+}
+
 /* ---- MAIN ----*/
 #homepage-main{
   font-family: Averia Serif Libre, sans-serif;
@@ -51,10 +61,6 @@ canvas{
   cursor: pointer;
 }
 
-#nav-links hr {
-  border-top: 2px solid white;
-}
-
 #nav-links a{
   color: #f8f8f8;
 }
@@ -72,10 +78,7 @@ canvas{
   cursor: default;
 }
 
-#homepage-content h1{
-  font-size: 45px;
-  font-size: 5vmax;
-}
+
 
 #cv-main{
   text-align: center;
