@@ -91,7 +91,21 @@ hr{
   color: black;
 }
 
-#contact-info{
+#contact-info {
+  border: 2px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  list-style-position: outside;
   list-style: none;
 }
 
