@@ -113,6 +113,11 @@ hr{
   color: steelblue;
 }
 
+.bioPic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+}
 
 /*navbar icon*/
 #nav-icon {
