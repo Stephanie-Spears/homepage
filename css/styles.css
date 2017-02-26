@@ -28,7 +28,7 @@ canvas{
 h1{
   display: inline;
   font-size: 45px;
-  font-size: 5vmax;
+  font-size: 9vmin;
 }
 
 hr{
