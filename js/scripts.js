@@ -13,7 +13,7 @@ var myHomepage = function(){
       $("#homepage-main").css("background-image", gallerySource[i]).fadeOut(0).fadeIn(1000);
       i++;
     }
-    var galleryInterval = setInterval(function(){rotateGallery();},40000);
+    var galleryInterval = setInterval(function(){rotateGallery();},60000);
   };
 
   var setBrand = function(){
@@ -32,16 +32,16 @@ var myHomepage = function(){
     clickCount++;
   };
 
-    setBackground();
-    $("#nav-icon").click(function(){
-      $("#nav-icon").toggleClass("open");
+  setBackground();
+  $("#nav-icon").click(function(){
+    $("#nav-icon").toggleClass("open");
+  });
+  $("#brand-icon").click(function(){
+    setBrand();
+  });
+  $("#cv-btn").click(function(){
+    $("html,body").animate({
+      scrollTop: $("#cv-main").offset().top},"slow");
     });
-    $("#brand-icon").click(function(){
-      setBrand();
-    });
-    $("#cv-btn").click(function(){
-      $("html,body").animate({
-        scrollTop: $("#cv-main").offset().top},"slow");
-      });
 
 }(); // the parens here cause the anonymous function to execute and return
