@@ -5,6 +5,7 @@
 /* ---- base ---- */
 
 html,body{
+  background-color: #4a4a4a;
   font-family: Averia Serif Libre, sans-serif;
   margin: 0;
   padding: 0;
@@ -32,7 +33,7 @@ h1{
 }
 
 hr{
-  border-top: 2px solid white;
+  border-top: 2px solid maroon;
 }
 
 /* ---- MAIN ----*/
@@ -65,10 +66,8 @@ hr{
   color: #f8f8f8;
 }
 
-#nav-links a.group2{
-  color: blue;
-}
 #homepage-content{
+  border: 2px solid maroon;
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -92,7 +91,7 @@ hr{
 }
 
 #contact-info {
-  border: 2px solid pink;
+  border: 2px solid maroon;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +113,27 @@ hr{
 }
 
 .bioPic {
-  float: left;
+  /*float: left;*/
   padding: 10px;
   width: 200px;
+}
+
+#languages-list{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+#languages-list li{
+  float: left;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  width: 50%;
+}
+#skills-list{
+
 }
 
 /*navbar icon*/
