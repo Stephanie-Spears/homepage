@@ -32,7 +32,6 @@ var myHomepage = function(){
     clickCount++;
   };
 
-  window.onload = function(){
     setBackground();
     $("#nav-icon").click(function(){
       $("#nav-icon").toggleClass("open");
@@ -44,6 +43,5 @@ var myHomepage = function(){
       $("html,body").animate({
         scrollTop: $("#cv-main").offset().top},"slow");
       });
-    };
 
 }(); // the parens here cause the anonymous function to execute and return
