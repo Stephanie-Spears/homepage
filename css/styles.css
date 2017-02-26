@@ -91,6 +91,15 @@ hr{
   color: black;
 }
 
+#contact-info{
+  list-style: none;
+}
+
+.blue-text{
+  color: steelblue;
+}
+
+
 /*navbar icon*/
 #nav-icon {
   right: 15px;
