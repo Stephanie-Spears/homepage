@@ -13,7 +13,7 @@ var myHomepage = function(){
       $("#homepage-main").css("background-image", gallerySource[i]).fadeOut(0).fadeIn(1000);
       i++;
     }
-    var galleryInterval = setInterval(function(){rotateGallery();},20000);
+    var galleryInterval = setInterval(function(){rotateGallery();},40000);
   };
 
   var setBrand = function(){
@@ -45,6 +45,5 @@ var myHomepage = function(){
         scrollTop: $("#cv-main").offset().top},"slow");
       });
     };
-
 
 }(); // the parens here cause the anonymous function to execute and return

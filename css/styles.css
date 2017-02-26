@@ -9,6 +9,11 @@ html,body{
   padding: 0;
 	width:100%;
 	height:100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 
 body{
@@ -29,29 +34,49 @@ canvas{
   background-position: 50% 50%;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
+
 #particles-js{
   width: 100%;
   height: 100%;
   position: absolute;
 }
+
 #site-nav {
   background-color: rgba(111, 119, 132, 0.7);
 }
+
+#brand-icon{
+  cursor: pointer;
+}
+
 #nav-links hr {
   border-top: 2px solid white;
 }
+
 #nav-links a{
   color: #f8f8f8;
 }
 #nav-links a.group2{
   color: blue;
 }
-#homepage-content {
+#homepage-content{
   position: absolute;
   bottom: 40px;
   left: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
+
+#homepage-content h1{
+  font-size: 45px;
+  font-size: 5vmax;
+}
+
 #cv-main{
   text-align: center;
   color: #f8f8f8;
@@ -387,3 +412,4 @@ span {
     display: block;
   }
 }*/
+}
