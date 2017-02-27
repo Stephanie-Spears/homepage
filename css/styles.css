@@ -35,6 +35,10 @@ h1{
 hr{
   border-top: 2px solid maroon;
 }
+ul{
+  padding: 0;
+  list-style-type: none;
+}
 
 /* ---- MAIN ----*/
 #homepage-main{
@@ -65,9 +69,12 @@ hr{
 #nav-links a{
   color: #f8f8f8;
 }
+#nav-links a:hover{
+  color: blue;
+}
 
 #homepage-content{
-  border: 2px solid maroon;
+  border: 2px solid white;
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -87,6 +94,7 @@ hr{
 }
 
 #cv-header span{
+  display: inline-block;
   color: black;
 }
 
@@ -112,26 +120,30 @@ hr{
   color: steelblue;
 }
 
-.bioPic {
-  /*float: left;*/
-  padding: 10px;
+#bioPic {
+  padding: 5px;
   width: 200px;
 }
 
 #languages-list{
   margin: 0;
   padding: 0;
-  list-style: none;
+  /*margin-left: -150px;*/
+  border: 2px solid pink;
 }
 
-#languages-list li{
+#languages-list li:nth-child(odd){
+  float: right;
+  width: 50%;
+}
+#languages-list li:nth-child(even){
   float: left;
-  margin: 0;
-  padding: 0;
-  display: inline;
   width: 50%;
 }
 #skills-list{
+  /*clear: left;*/
+  list-style: none;
+  border: 2px solid pink;
 
 }
 
