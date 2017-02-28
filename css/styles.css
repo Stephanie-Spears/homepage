@@ -124,14 +124,13 @@ ul{
 }
 
 #bioPic img{
+  float: left;
   border: 2px solid gray;
   width: 175px;
 }
 
 #languages-list{
   border: 2px solid gray;
-  /*padding: 0;
-  margin: 0;*/
 }
 
 #languages-list li:nth-child(even){
@@ -144,9 +143,6 @@ ul{
 }
 #skills-list{
   border: 2px solid green;
-  /*padding: 0;
-  margin: 0;*/
-  /*padding: 3% 5%;*/
 }
 
 /*navbar icon*/
