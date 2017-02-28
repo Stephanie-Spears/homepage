@@ -130,6 +130,7 @@ ul{
 }
 
 #languages-list{
+  float: left;
   border: 2px solid gray;
 }
 
