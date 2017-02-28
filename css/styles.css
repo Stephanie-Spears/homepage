@@ -161,11 +161,6 @@ ul{
   color: gray;
 }
 
-.work-entry:nth-child(odd){
-  background-color: white;
-  color: gray;
-}
-
 .work-entry:nth-child(even){
   background-color: #f7f9ff;
   color: white;
@@ -193,31 +188,60 @@ ul{
 #education-history{
 
 }
-.work-entry:nth-child(odd){
 
-}
-.work-entry:nth-child(even){
-
-}
-.education-entry{
-
+.education-entry:nth-child(even){
+  background-color:  #52565b;
+  color: white;
 }
 .education-name{
+  font-size: 18px;
+  color: white;
+}
+.education-major{
+  color: black;
+}
+
+.education-degree{
   color: #1199c3;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.education-dates{
+  font-style: italic;
+  font-size: 14px;
+  color: gray;
 }
 .education-location{
   float: right;
 }
-.education-degree{
 
+#completed-courses {
+  background-color: white;
+  color: gray;
 }
-.education-major{
 
+.course-entry:nth-child(even){
+  background-color: #f7f9ff;
+  color: white;
 }
-.education-dates{
+
+.course-title{
+  color: #1199c3;
+}
+
+.course-dates{
   font-style: italic;
   font-size: 14px;
+  color: gray;
 }
+
+.course-description{
+  clear: right;
+  color: black;
+}
+
+
 
 
 /*navbar icon*/
