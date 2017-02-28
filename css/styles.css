@@ -16,7 +16,7 @@ html,body{
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 
 body{
