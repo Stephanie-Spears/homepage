@@ -226,6 +226,7 @@ ul{
   color: white;
 }
 
+
 .course-title{
   color: #1199c3;
 }
@@ -234,6 +235,9 @@ ul{
   font-style: italic;
   font-size: 14px;
   color: gray;
+}
+.course-school{
+  float: right;
 }
 
 .course-description{
