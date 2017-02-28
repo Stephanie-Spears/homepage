@@ -119,25 +119,20 @@ ul{
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  /*padding: 5px;
-  margin: 5px;*/
 }
 
 #bioPic {
-  /*margin: 5px;
-  padding: 0;*/
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
+  padding-right: 0;
 }
 
 #bioPic img{
   border: 2px solid gray;
-  width: 175px;
+  width: 200px;
 }
 
 #languages-list{
-  /*margin: 5px;
-  padding: 0;*/
-  border: 2px solid pink;
+  /*border: 2px solid pink;*/
 }
 
 #languages-list li:nth-child(even){
@@ -149,8 +144,8 @@ ul{
   width: 60%;
 }
 #personal-list{
-  border: 2px solid green;
-  /*margin: 2%;*/
+  /*margin: 5px;*/
+  /*border: 2px solid green;*/
 }
 
 /*navbar icon*/
