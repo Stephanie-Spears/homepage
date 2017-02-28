@@ -134,11 +134,11 @@ ul{
   margin: 0;*/
 }
 
-#languages-list li:nth-child(odd){
+#languages-list li:nth-child(even){
   float: right;
   width: 50%;
 }
-#languages-list li:nth-child(even){
+#languages-list li:nth-child(odd){
   float: left;
   width: 50%;
 }
