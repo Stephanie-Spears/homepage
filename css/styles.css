@@ -116,17 +116,22 @@ ul{
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1% 5%;
+  padding: 1%;
 }
 
 #bioPic {
-  width: 200px;
+  border: 2px solid pink;
+}
+
+#bioPic img{
   border: 2px solid gray;
+  width: 200px;
 }
 
 #languages-list{
-  padding: 0;
-  margin: 0;
+  border: 2px solid gray;
+  /*padding: 0;
+  margin: 0;*/
 }
 
 #languages-list li:nth-child(odd){
@@ -141,7 +146,6 @@ ul{
   /*padding: 0;
   margin: 0;*/
   /*padding: 3% 5%;*/
-  list-style: none;
 }
 
 /*navbar icon*/
