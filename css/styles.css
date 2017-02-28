@@ -41,6 +41,14 @@ ul{
   color: steelblue;
 }
 
+/*.white-background{
+  background-color: #fafafa;
+}*/
+
+.gray-background{
+  background-color: #484848
+}
+
 
 /* ---- MAIN ----*/
 #homepage-main{
@@ -92,11 +100,11 @@ ul{
 }
 
 #cv-main h4{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fafafa;
 }
 
 #cv-header{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fafafa;
   margin: 25px 0;
 }
 
@@ -106,7 +114,7 @@ ul{
 }
 
 #contact-info {
-  border: 2px solid white;
+  border: 2px solid #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,6 +153,44 @@ ul{
 #qualities-list{
 
 }
+
+
+/* NOTE: add JS scipt to append each work item? */
+.work-experience {
+  background-color: white;
+  color: gray;
+}
+
+
+.work-entry:nth-child(even){
+  background-color: white;
+  color: gray;
+
+}
+.work-entry:nth-child(odd){
+  background-color: #e3e9f2;
+  color: white;
+}
+
+.work-title{
+  color: #1199c3;
+}
+
+.work-dates{
+  font-style: italic;
+  font-size: 14px;
+  color: gray;
+}
+
+.work-location{
+  float: right;
+}
+
+.work-description{
+  clear: right;
+  color: black;
+}
+
 
 /*navbar icon*/
 #nav-icon {
@@ -458,3 +504,4 @@ span {
     display: block;
   }
 }*/
+}
