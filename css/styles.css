@@ -100,7 +100,7 @@ ul{
 }
 
 #cv-main h4{
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid gray;
 }
 
 #cv-header{
@@ -156,18 +156,17 @@ ul{
 
 
 /* NOTE: add JS scipt to append each work item? */
-.work-experience {
+#work-experience {
   background-color: white;
   color: gray;
 }
 
+.work-entry:nth-child(odd){
+  background-color: white;
+  color: gray;
+}
 
 .work-entry:nth-child(even){
-  background-color: white;
-  color: gray;
-
-}
-.work-entry:nth-child(odd){
   background-color: #f7f9ff;
   color: white;
 }
@@ -189,6 +188,35 @@ ul{
 .work-description{
   clear: right;
   color: black;
+}
+
+#education-history{
+
+}
+.work-entry:nth-child(odd){
+
+}
+.work-entry:nth-child(even){
+
+}
+.education-entry{
+
+}
+.education-name{
+  color: #1199c3;
+}
+.education-location{
+  float: right;
+}
+.education-degree{
+
+}
+.education-major{
+
+}
+.education-dates{
+  font-style: italic;
+  font-size: 14px;
 }
 
 
