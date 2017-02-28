@@ -221,6 +221,10 @@ ul{
   color: gray;
 }
 
+#completed-courses a{
+  font-size: 14px;
+}
+
 .course-entry:nth-child(even){
   background-color: #f7f9ff;
   color: white;
