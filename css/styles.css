@@ -193,7 +193,7 @@ ul{
   background-color:  #52565b;
   color: white;
 }
-.education-name{
+.education-name a{
   font-size: 18px;
   color: white;
 }
