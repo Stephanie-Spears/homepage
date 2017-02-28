@@ -32,12 +32,20 @@ h1{
   font-size: 9vmin;
 }
 
-hr{
-  border-top: 2px solid maroon;
+ul{
+  padding: 0;
+  list-style-type: none;
 }
+
+.blue-text{
+  color: steelblue;
+}
+
 
 /* ---- MAIN ----*/
 #homepage-main{
+  margin: 0;
+  padding: 0;
   color: #fafafa;
   background-image: url("../img/Forest.jpg");
   background-repeat: no-repeat;
@@ -65,9 +73,12 @@ hr{
 #nav-links a{
   color: #f8f8f8;
 }
+#nav-links a:hover{
+  color: blue;
+}
 
 #homepage-content{
-  border: 2px solid maroon;
+  border: 2px solid white;
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -78,15 +89,18 @@ hr{
   background-color: #4a4a4a;
   width: 100%;
   height: 100%;
-  border-top: 5px solid black;
+  border-top: 10px solid black;
+}
+#cv-main h4, #cv-main h1{
+  border-bottom: 1px solid maroon;
 }
 
 #cv-header{
-  margin-left: 1em;
-  margin-top: 2em;
+  padding: 5% 5%;
 }
 
-#cv-header span{
+#cv-dev-title{
+  font-size: 3.5vmin;
   color: black;
 }
 
@@ -103,36 +117,30 @@ hr{
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10px;
-  list-style-position: outside;
-  list-style: none;
+  padding: 1% 5%;
 }
 
-.blue-text{
-  color: steelblue;
-}
-
-.bioPic {
-  /*float: left;*/
-  padding: 10px;
+#bioPic {
   width: 200px;
+  border: 2px solid gray;
 }
 
 #languages-list{
-  margin: 0;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
 
-#languages-list li{
+#languages-list li:nth-child(odd){
+  float: right;
+  width: 50%;
+}
+#languages-list li:nth-child(even){
   float: left;
-  margin: 0;
-  padding: 0;
-  display: inline;
   width: 50%;
 }
 #skills-list{
-
+  padding: 3% 5%;
+  list-style: none;
 }
 
 /*navbar icon*/
