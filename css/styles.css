@@ -124,6 +124,7 @@ ul{
 #bioPic {
   /*border: 2px solid purple;*/
   padding-right: 0;
+  padding-bottom: 10px;
 }
 
 #bioPic img{
