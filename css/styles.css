@@ -240,7 +240,9 @@ ul{
 #portfolio-projects{
   text-align: center;
 }
-
+#portfolio-projects img{
+  width: 300px;
+}
 
 
 
