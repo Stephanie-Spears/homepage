@@ -3,6 +3,12 @@
    ========================================================================== */
 
 /* ---- base ---- */
+@import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre&effect=outline);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css);
+
+
 
 html,body{
   background-color: #4a4a4a;
