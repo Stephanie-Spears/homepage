@@ -40,14 +40,8 @@ ul{
 .blue-text{
   color: steelblue;
 }
-
-/*.white-background{
-  background-color: #fafafa;
-}*/
-
-.gray-background{
-  background-color: #484848
-}
+.more-content {display:none;}
+.visible {display:block;}
 
 
 /* ---- MAIN ----*/
