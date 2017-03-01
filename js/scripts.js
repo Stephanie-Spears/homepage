@@ -42,9 +42,13 @@ var myHomepage = function(){
     setBrand();
   });
   $("#cv-btn").click(function(){
-    $("html,body").animate({
-      scrollTop: $("#cv-main").offset().top},"slow");
-    });
+    $("html,body").animate({scrollTop: $("#cv-main").offset().top},"slow");
+  });
+  // $(".readmore").click(function(){
+  //   var text = $(".more-content").is(":visible") ? "Show more (+)" : "Less (-)";
+  //
+  // });
+
 
     $(".readmore").on("click touchstart", function(event) {
       var txt = $(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";

@@ -18,9 +18,6 @@ html,body{
   cursor: default;
 }
 
-body{
-}
-
 canvas{
   display:block;
   vertical-align:bottom;
@@ -37,11 +34,19 @@ ul{
   list-style-type: none;
 }
 
+
+/* my classes */
+
 .blue-text{
   color: steelblue;
 }
-.more-content {display:none;}
-.visible {display:block;}
+
+.more-content {
+  display:none;
+}
+.visible {
+  display:block;
+}
 
 
 /* ---- MAIN ----*/
@@ -74,6 +79,7 @@ ul{
 #nav-links a{
   color: #f8f8f8;
 }
+
 #nav-links a:hover{
   color: blue;
 }
@@ -241,7 +247,6 @@ ul{
   text-align: center;
 }
 #portfolio-projects img{
-  /*width: 300px;*/
   width: 100%;
 }
 
