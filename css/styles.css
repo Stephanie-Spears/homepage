@@ -22,8 +22,6 @@ html,body{
 
 
 body{
-
-
   font-family: Averia Serif Libre, sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -97,11 +95,9 @@ ul{
 }
 
 #site-nav {
-  background-color: rgba(111, 119, 132, 0.7);
+  background-color: rgba(111, 119, 132, 0.8);
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
   z-index: 10;
 }
 
