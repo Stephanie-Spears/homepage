@@ -22,6 +22,8 @@ html,body{
 
 
 body{
+
+
   font-family: Averia Serif Libre, sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -37,36 +39,39 @@ canvas{
 }
 
 h1{
-  border-bottom: 2px solid gray;
+  border: 2px solid yellow;
   font-size: 45px;
   font-size: 9vmin;
-  display: inline-block;
+  display: inline;
   width: 100%;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav h4{
+  border: 2px solid green;
+  width: 100%;
+}
+
+nav a{
+  color: #f8f8f8;
+}
+
+nav a:hover{
+  color: blue;
 }
 
 h4{
-  border-bottom: 1px solid gray;
+  border: 2px solid red;
   width: 100%;
+  /*color: steelblue;*/
 }
 
 ul{
   list-style-type: none;
 }
 
-a{
-  color: #f8f8f8;
-}
-
-a:hover{
-  color: blue;
-}
 
 /* ---- My Classes ---- */
-/*.blue-text{
-  color: steelblue;
-}*/
-
 .more-content {
   display: none;
 }
@@ -93,6 +98,11 @@ a:hover{
 
 #site-nav {
   background-color: rgba(111, 119, 132, 0.7);
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 #nav-links{
