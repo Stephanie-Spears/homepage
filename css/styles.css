@@ -37,7 +37,6 @@ canvas{
 }
 
 h1{
-  border: 2px solid yellow;
   font-size: 45px;
   font-size: 9vmin;
   display: inline-block;
@@ -128,13 +127,16 @@ ul{
 #cv-main h1,
 #cv-main span{
   color: steelblue;
-
 }
 
-/*#cv-header{
+#cv-main h4{
+  border-bottom: 1px solid #fafafa;
+}
+
+#cv-header{
   border-bottom: 1px solid #fafafa;
   margin: 25px 0;
-}*/
+}
 
 #cv-header span{
   text-shadow: none;
@@ -142,7 +144,7 @@ ul{
   color: black;
 }
 
-#contact-info ul{
+#contact-info{
   border: 2px solid #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,22 +158,15 @@ ul{
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-/*#contact-info span{
-  color: steelblue;
-}*/
 
 #bioPic {
-  padding-right: 0;
-  padding-bottom: 10px;
-}
-
-#bioPic img{
-  border: 2px solid gray;
+  margin-bottom: 10px;
   width: 200px;
+  border: 2px solid gray;
 }
 
 #languages-list {
-
+  padding-left: 0;
 }
 
 #languages-list li:nth-child(even){
@@ -181,9 +176,6 @@ ul{
 #languages-list li:nth-child(odd){
   float: left;
   width: 60%;
-}
-#qualities-list{
-
 }
 
 
