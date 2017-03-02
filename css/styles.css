@@ -37,14 +37,15 @@ canvas{
 }
 
 h1{
-  border: 2px solid pink;
+  border-bottom: 2px solid gray;
   font-size: 45px;
   font-size: 9vmin;
   display: inline-block;
   width: 100%;
 }
+
 h4{
-  border: 2px solid yellow;
+  border-bottom: 1px solid gray;
   width: 100%;
 }
 
@@ -61,9 +62,9 @@ a:hover{
 }
 
 /* ---- My Classes ---- */
-.blue-text{
+/*.blue-text{
   color: steelblue;
-}
+}*/
 
 .more-content {
   display: none;
@@ -120,21 +121,23 @@ a:hover{
   border-top: 10px solid black;
 }
 
-#cv-main h4{
-  border-bottom: 1px solid gray;
+#cv-main h4,
+#cv-main span{
+  /*border-bottom: 1px solid gray;*/
+  color: steelblue;
 }
 
-#cv-header{
+/*#cv-header{
   border-bottom: 1px solid #fafafa;
   margin: 25px 0;
-}
+}*/
 
-#cv-dev-title{
+#cv-main #dev-title{
   font-size: 15px;
   color: black;
 }
 
-#contact-info {
+#contact-info ul{
   border: 2px solid #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,6 +151,9 @@ a:hover{
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
+/*#contact-info span{
+  color: steelblue;
+}*/
 
 #bioPic {
   padding-right: 0;
@@ -159,7 +165,7 @@ a:hover{
   width: 200px;
 }
 
-#languages-list{
+#languages-list {
 
 }
 
