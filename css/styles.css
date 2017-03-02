@@ -35,15 +35,16 @@ canvas{
   display: block;
   vertical-align: bottom;
 }
-/*inline block-like inline, but can have a width and height*/
+
 h1{
-  display: inline-block;
+  border: 2px solid pink;
   font-size: 45px;
   font-size: 9vmin;
+  display: inline-block;
+  width: 100%;
 }
 h4{
   border: 2px solid yellow;
-  display: inline-block;
   width: 100%;
 }
 
@@ -94,14 +95,13 @@ a:hover{
 
 #nav-links{
   border: 2px solid purple;
+
 }
 
 #brand-icon{
-  border: 2px solid pink;
   width: 40px;
   height: 40px;
-  display: inline-block;
-  /*align: bottom;*/
+  vertical-align: bottom;
   cursor: pointer;
 }
 
