@@ -42,6 +42,7 @@ h1{
   font-size: 9vmin;
   display: inline-block;
   width: 100%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h4{
@@ -122,9 +123,10 @@ a:hover{
 }
 
 #cv-main h4,
+#cv-main h1,
 #cv-main span{
-  /*border-bottom: 1px solid gray;*/
   color: steelblue;
+
 }
 
 /*#cv-header{
@@ -132,7 +134,8 @@ a:hover{
   margin: 25px 0;
 }*/
 
-#cv-main #dev-title{
+#cv-header span{
+  text-shadow: none;
   font-size: 15px;
   color: black;
 }
