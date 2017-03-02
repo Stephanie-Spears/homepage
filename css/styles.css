@@ -116,11 +116,10 @@ ul{
 }
 
 #cv-main{
-  color: #f8f8f8;
-  background-color: #4a4a4a;
   width: 100%;
   height: 100%;
   border-top: 10px solid black;
+  background-color: #4a4a4a;
 }
 
 #cv-main h4,
@@ -145,7 +144,6 @@ ul{
 }
 
 #contact-info{
-  border: 2px solid #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,6 +187,11 @@ ul{
   background-color: #f7f9ff;
   color: white;
 }*/
+
+#cv-main .row:nth-child(odd){
+  color: #f8f8f8;
+  background-color: #4a4a4a;
+}
 
 .work-title{
   color: #1199c3;
