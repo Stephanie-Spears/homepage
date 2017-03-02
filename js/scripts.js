@@ -32,8 +32,6 @@ var myHomepage = function(){
     clickCount++;
   };
 
-  // $("#show-more-button").click(function(){
-  // });
   setBackground();
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
