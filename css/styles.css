@@ -44,11 +44,11 @@ h1{
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-a{
+nav a{
   color: #f8f8f8;
 }
 
-a:hover{
+nav a:hover{
   color: blue;
 }
 
@@ -155,6 +155,7 @@ ul{
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  border: 2px solid white;
 }
 
 #bioPic {
@@ -188,29 +189,37 @@ ul{
   color: white;
 }*/
 
-#cv-main .row:nth-child(odd){
-  color: #f8f8f8;
+#cv-entries .row:nth-child(odd){
+  background-color: white;
+}
+
+#cv-entries .row:nth-child(even){
   background-color: #4a4a4a;
 }
 
-.work-title{
-  color: #1199c3;
+.location{
+  float: right;
 }
 
-.work-dates{
+.dates{
   font-style: italic;
   font-size: 14px;
   color: gray;
 }
 
-.work-location{
-  float: right;
+.description{
+  clear: right;
+  color: black;
+}
+/*
+.work-title{
+  color: #1199c3;
 }
 
 .work-description{
   clear: right;
   color: black;
-}
+}*/
 
 /*#education-history {
   background-color: #4a4a4a;
@@ -221,7 +230,7 @@ ul{
 #education-history .more-content ul:nth-child(odd){
   background-color:  #52565b;
 }*/
-.education-name a{
+/*.education-name a{
   font-size: 18px;
   color: white;
 }
@@ -235,14 +244,8 @@ ul{
   font-size: 14px;
 }
 
-.education-dates{
-  font-style: italic;
-  font-size: 14px;
-  color: gray;
-}
-.education-location{
-  float: right;
-}
+
+}*/
 /*
 #completed-courses {
   background-color: white;
@@ -252,24 +255,15 @@ ul{
   background-color: #f7f9ff;
   color: white;
 }*/
-
+/*
 .course-title{
   color: #1199c3;
-}
-
-.course-dates{
-  font-style: italic;
-  font-size: 14px;
-  color: gray;
-}
-.course-school{
-  float: right;
 }
 
 .course-description{
   clear: right;
   color: black;
-}
+}*/
 
 #portfolio-projects{
   text-align: center;
