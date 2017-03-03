@@ -100,6 +100,7 @@ ul{
   background-position: 50% 50%;
   width: 100%;
   height: 100%;
+  border-bottom: 10px solid black;
 }
 
 #particles-js{
@@ -115,11 +116,24 @@ ul{
   left: 40px;
 }
 
+
 #cv-main{
-  border-top: 10px solid black;
   width: 100%;
-  height: 100%;
   background-color: #4a4a4a;
+}
+#cv-top h1{
+  border-bottom: 1px solid #fafafa;
+  margin: 25px 0;
+  color: steelblue;
+}
+#cv-top h1 span{
+  text-shadow: none;
+  font-size: 15px;
+  color: black;
+}
+#cv-top h4{
+  color: steelblue;
+  border-bottom: 1px solid #fafafa;
 }
 
 #contact-info{
@@ -136,6 +150,56 @@ ul{
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+#contact-info span{
+  color: steelblue;
+}
+
+#bioPic{
+  margin-bottom: 10px;
+  width: 200px;
+  border: 2px solid gray;
+}
+
+#languages-list{
+  padding-left: 0;
+}
+
+#languages-list li:nth-child(even){
+  float: right;
+  width: 40%;
+}
+#languages-list li:nth-child(odd){
+  float: left;
+  width: 60%;
+}
+
+#cv-entries .row:nth-child(odd){
+  background-color: white;
+  color: black;
+}
+
+#cv-entries .row:nth-child(even){
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.dates{
+  font-style: italic;
+  font-size: 14px;
+  color: gray;
+}
+.location{
+  float: right;
+}
+
+.description{
+  clear: right;
+  color: black;
+}
+
+.title, .title a {
+  color: #1199c3;
 }
 
 /*#cv-main{
