@@ -116,15 +116,39 @@ ul{
 }
 
 #cv-main{
+  border-top: 10px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: #4a4a4a;
+}
+
+#contact-info{
+  border: 2px solid white;
+  padding: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+/*#cv-main{
   width: 100%;
   height: 100%;
   border-top: 10px solid black;
   background-color: #4a4a4a;
 }
 
-#cv-main h4,
+
 #cv-main h1,
-#cv-main span{
+#cv-main h4,
+#contact-info span{
   color: steelblue;
 }
 
@@ -145,6 +169,7 @@ ul{
 
 #contact-info{
   border: 2px solid white;
+  padding: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,13 +186,13 @@ ul{
   background-color: #4a4a4a;
 }
 
-#bioPic {
+#bioPic{
   margin-bottom: 10px;
   width: 200px;
   border: 2px solid gray;
 }
 
-#languages-list {
+#languages-list{
   padding-left: 0;
 }
 
@@ -179,21 +204,9 @@ ul{
   float: left;
   width: 60%;
 }
-
-
-/* NOTE: add JS scipt to append each work item? */
-/*#work-experience {
-  background-color: white;
-  color: gray;
-}*/
-
-/*.work-entry:nth-child(even){
-  background-color: #f7f9ff;
-  color: white;
-}*/
-
+*/
+/*
 #cv-entries .row:nth-child(odd){
-
   background-color: white;
   color: black;
 }
@@ -203,14 +216,13 @@ ul{
   color: white;
 }
 
-.location{
-  float: right;
-}
-
 .dates{
   font-style: italic;
   font-size: 14px;
   color: gray;
+}
+.location{
+  float: right;
 }
 
 .description{
@@ -219,9 +231,8 @@ ul{
 }
 
 .title, .title a {
-  /*background-color: #1199c3;*/
   color: #1199c3;
-}
+}*/
 /*
 
 .work-description{
