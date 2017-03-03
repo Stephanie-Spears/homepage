@@ -174,9 +174,23 @@ ul{
   width: 60%;
 }
 
+#cv-entries .description{
+  color: black;
+}
+
+#cv-entries h4{
+  color: gray;
+  border-bottom: 1px solid gray;
+}
+
+#cv-entries ul > :first-child{
+  color: #1199c3;
+  font-size: 18px;
+}
+
 #cv-entries .row:nth-child(odd){
   background-color: white;
-  color: black;
+  color: gray;
 }
 
 #cv-entries .row:nth-child(even){
@@ -189,18 +203,19 @@ ul{
   font-size: 14px;
   color: gray;
 }
-.location{
+#cv-entries .location {
   float: right;
+  color: gray;
 }
 
-.description{
-  clear: right;
+#cv-entries span{
+  font-size: 14px;
   color: black;
 }
 
-.title, .title a {
+/*.title, .title a {
   color: #1199c3;
-}
+}*/
 
 /*#cv-main{
   width: 100%;
