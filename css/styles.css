@@ -143,7 +143,7 @@ ul{
   color: black;
 }
 
-#contact-info{
+/*#contact-info{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +156,19 @@ ul{
   -ms-flex-pack: distribute;
   justify-content: space-around;
   border: 2px solid white;
+}*/
+
+#contact-info, #skills{
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          flex-direction: row;
+
 }
 
 #bioPic {
@@ -190,11 +203,14 @@ ul{
 }*/
 
 #cv-entries .row:nth-child(odd){
+
   background-color: white;
+  color: black;
 }
 
 #cv-entries .row:nth-child(even){
   background-color: #4a4a4a;
+  color: white;
 }
 
 .location{
@@ -211,10 +227,12 @@ ul{
   clear: right;
   color: black;
 }
-/*
-.work-title{
+
+.title, .title a {
+  /*background-color: #1199c3;*/
   color: #1199c3;
 }
+/*
 
 .work-description{
   clear: right;
