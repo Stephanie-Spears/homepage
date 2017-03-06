@@ -372,9 +372,12 @@ ul{
 
 /*navbar icon*/
 #nav-icon {
-  right: 15px;
   width: 60px;
-  height: 45px;
+  right: 15px;
+  top: 15px;
+  /*right: 15px;
+  width: 60px;
+  height: 45px;*/
   position: absolute;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
