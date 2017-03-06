@@ -53,6 +53,7 @@ nav a:hover{
 }
 
 nav {
+  border: 5px solid gray;
   background-color: rgba(111, 119, 132, 0.8);
   width: 100%;
   z-index: 10;
@@ -75,7 +76,6 @@ ul{
 
 /* ---- MAIN ----*/
 #site-nav {
-  border: 5px solid gray;
   position: fixed;
 }
 
@@ -88,7 +88,7 @@ ul{
 
 #nav-links{
   border: 2px solid rgba(255, 147, 219, .5);
-  width: 85%;
+  width: 100%;
 }
 
 #homepage-main{
@@ -373,9 +373,6 @@ ul{
 /*navbar icon*/
 #nav-icon {
   width: 60px;
-  /*right: 15px;*/
-  /*top: 15px;*/
-  /*position: absolute;*/
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
