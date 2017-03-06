@@ -35,6 +35,9 @@ var myHomepage = function(){
   setBackground();
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
+    $("#nav-icon").click(function(){
+      $("#nav-icon").toggleClass("open");
+    });
   });
   $("#brand-icon").click(function(){
     setBrand();
