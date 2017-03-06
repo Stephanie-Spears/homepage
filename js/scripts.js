@@ -36,6 +36,11 @@ var myHomepage = function(){
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
+  $("#nav-links").click(function(){
+    $("#nav-icon").toggleClass("open");
+  $(this).collapse('hide');
+  });
+
   $("#brand-icon").click(function(){
     setBrand();
   });
