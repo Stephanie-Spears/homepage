@@ -89,10 +89,10 @@ ul{
   cursor: pointer;
 }
 
-#nav-links{
+/*#nav-links{
   border: 2px solid pink;
   width: 85%;
-}
+}*/
 
 #homepage-main{
   background-image: url("../img/Forest.jpg");
