@@ -47,6 +47,9 @@ var myHomepage = function(){
   $("#cv-btn").click(function(){
     $("html,body").animate({scrollTop: $("#cv-main").offset().top},"slow");
   });
+  $("#home-btn").click(function(){
+    $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
+  });
   // $(".readmore").click(function(){
   //   var text = $(".more-content").is(":visible") ? "Show more (+)" : "Less (-)";
   //
