@@ -80,10 +80,9 @@ ul{
 }
 
 /* ---- MAIN ----*/
-#site-nav {
+#site-nav{
   position: fixed;
 }
-
 
 #brand-icon{
   width: 40px;
