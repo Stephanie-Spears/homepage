@@ -76,11 +76,10 @@ ul{
 /* ---- MAIN ----*/
 #site-nav {
   border: 5px solid gray;
-  position: fixed;
+  /*position: fixed;*/
 }
 #navbar-header{
   width: 100%;
-  border: 2px solid red;
 }
 #brand-icon{
   width: 40px;
