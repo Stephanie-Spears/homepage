@@ -59,6 +59,11 @@ nav {
   z-index: 10;
 }
 
+header{
+  display: inline-block;
+  width: 100%;
+}
+
 ul{
   list-style-type: none;
 }
@@ -78,10 +83,10 @@ ul{
 #site-nav {
   position: fixed;
 }
-#site-nav-header{
+/*#site-nav-header{
   display: inline-block;
   width: 100%;
-}
+}*/
 
 #brand-icon{
   width: 40px;
@@ -91,7 +96,7 @@ ul{
 }
 
 #nav-links{
-  border: 2px solid rgba(255, 147, 219, .5);
+  /*border: 2px solid rgba(255, 147, 219, .5);*/
 }
 
 #homepage-main{
