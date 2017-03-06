@@ -53,9 +53,7 @@ nav a:hover{
 }
 
 nav {
-  background-color: rgba(111, 119, 132, 0.8);
-  width: 100%;
-  z-index: 10;
+
 }
 
 ul{
@@ -75,8 +73,11 @@ ul{
 
 /* ---- MAIN ----*/
 #site-nav {
+  background-color: rgba(111, 119, 132, 0.8);
+  width: 100%;
+  z-index: 10;
   border: 5px solid gray;
-  /*position: fixed;*/
+  position: fixed;
 }
 #navbar-header{
   width: 100%;
@@ -88,10 +89,10 @@ ul{
   cursor: pointer;
 }
 
-/*#nav-links{
+#nav-links{
   border: 2px solid pink;
   width: 85%;
-}*/
+}
 
 #homepage-main{
   background-image: url("../img/Forest.jpg");
@@ -374,6 +375,7 @@ ul{
 
 /*navbar icon*/
 #nav-icon {
+  border: 2px solid red;
   right: 15px;
   width: 60px;
   height: 45px;
