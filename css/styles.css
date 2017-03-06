@@ -376,7 +376,7 @@ ul{
 #nav-icon {
   right: 15px;
   width: 60px;
-  height: 45px;
+  /*height: 45px;*/
   position: absolute;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
