@@ -373,7 +373,7 @@ ul{
 /*navbar icon*/
 #nav-icon {
   width: 60px;
-  right: 15px;
+  /*right: 15px;*/
   /*top: 15px;*/
   position: absolute;
   -webkit-transform: rotate(0deg);
