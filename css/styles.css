@@ -60,7 +60,6 @@ nav {
 }
 
 header{
-  /*display: inline-block;*/
   width: 100%;
 }
 
@@ -80,16 +79,7 @@ ul{
 }
 
 /* ---- MAIN ----*/
-#site-nav{
-  position: fixed;
-}
 
-#brand-icon{
-  width: 40px;
-  height: 40px;
-  vertical-align: bottom;
-  cursor: pointer;
-}
 
 #homepage-main{
   background-image: url("../img/Forest.jpg");
@@ -370,7 +360,18 @@ ul{
 
 
 
-/*navbar icon*/
+/*Navbar*/
+#site-nav{
+  position: fixed;
+}
+
+#brand-icon{
+  width: 40px;
+  height: 40px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
 #nav-icon {
   width: 60px;
   -webkit-transform: rotate(0deg);
