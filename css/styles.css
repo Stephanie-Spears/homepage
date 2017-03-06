@@ -78,9 +78,10 @@ ul{
   border: 5px solid gray;
   position: fixed;
 }
-/*#navbar-header{
+#navbar-header{
   width: 100%;
-}*/
+  border: 2px solid red;
+}
 #brand-icon{
   width: 40px;
   height: 40px;
