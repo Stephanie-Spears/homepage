@@ -94,6 +94,7 @@ span{
   color: black;
 }
 .title{
+  font-size: 18px;
   color: #1199c3;
 }
 
@@ -170,18 +171,10 @@ span{
   width: 60%;
 }
 
-
 /* ---- CV ENTRIES----*/
-
-
 #cv-entries h4{
   color: gray;
   border-bottom: 1px solid gray;
-}
-
-#cv-entries ul > :first-child{
-  color: #1199c3;
-  font-size: 18px;
 }
 
 #cv-entries .row:nth-child(odd){
@@ -189,16 +182,19 @@ span{
   color: gray;
 }
 
-#cv-entries .row:nth-child(even){
-  background-color: #4a4a4a;
-  color: white;
+#cv-entries .education-entry:nth-child(odd){
+  background-color:  #52565b;
+}
+#cv-entries .work-entry:nth-child(odd), #cv-entries .course-entry:nth-child(odd){
+  background-color: #f7f9ff;
 }
 
 
-#portfolio-projects{
+#cv-entries .row:last-child{
   text-align: center;
+
 }
-#portfolio-projects img{
+#cv-entries img{
   width: 100%;
 }
 /*.title, .title a {

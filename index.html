@@ -5,7 +5,7 @@
 -CONDENSE same styles in CSS
 -REWRITE last javascript code in my own words
 -FIX PORTFOLIO links and popupS
- -->
+-change JS function to toggleClass, for show more/less so that the colors are correctly displayed in even/odd -->
 
 <!DOCTYPE html>
 <html>
@@ -167,15 +167,16 @@
             <p><a class="readmore" href="#">Show more (+)</a></p>
           </div>
         </div><!-- end row 4 div -->
+
         <!-- education history -->
         <div class="row">
-          <div id="education-history" class="col">
+          <div class="col">
             <hr>
             <h4>Education</h4>
             <div class="visible-content">
               <ul class="education-entry">
                 <li class="education-name"><a  class="title" href="https://www.pcc.edu/">Portland Community College</a></li>
-                <li class="dates">Sept 2006-Aug 2007, Feb 2015-Dec 2016 <span class="location">Portland, OR</span></li>
+                <li class="dates">Feb 2015-Dec 2016 <span class="location">Portland, OR</span></li>
                 <li class="education-major">Major: Computer Science</li>
               </ul>
               <ul class="education-entry">
@@ -204,73 +205,74 @@
             <p><a class="readmore" href="#">Show more (+)</a></p>
           </div>
         </div><!-- end row 5 div -->
+
         <!-- completed courses -->
         <div class="row">
-          <div id="completed-courses" class="col">
+          <div  class="col">
             <hr>
             <h4>Completed Courses</h4>
             <div class="visible-content">
               <ul class="course-entry">
-                <li class="course-title">JavaScript Basics</li>
+                <li class="title">JavaScript Basics</li>
                 <li class="dates">Feb 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/ud804/lessons/1946788554/concepts/25505685350923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/javascript-basics--ud804">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Programming Foundations with Python</li>
+                <li class="title">Programming Foundations with Python</li>
                 <li class="dates">Feb 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/ud036/lessons/990110642/concepts/10079185740923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/programming-foundations-with-python--ud036">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">JavaScript, CSS, HTML</li>
+                <li class="title">JavaScript, CSS, HTML</li>
                 <li class="dates">Jan 2017<span class="location">Epicodus</span></li>
-                <li class="description"><a href="https://www.epicodus.com/">Course Details</a></li>
+                <li><a class="description" href="https://www.epicodus.com/">Course Details</a></li>
               </ul>
             </div>
             <div class="more-content">
               <ul class="course-entry">
-                <li class="course-title">Intro to Computer Science</li>
+                <li class="title">Intro to Computer Science</li>
                 <li class="dates">Jan 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/cs101/lessons/48299949/concepts/486985440923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/intro-to-computer-science--cs101">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">How to Use Git and Github</li>
+                <li class="title">How to Use Git and Github</li>
                 <li class="dates">Jan 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29607789240923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Intro to HTML and CSS</li>
+                <li class="title">Intro to HTML and CSS</li>
                 <li class="dates">Jan 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/ud304/lessons/2617868617/concepts/27713785570923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/intro-to-html-and-css--ud304">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Web Development</li>
+                <li class="title">Web Development</li>
                 <li class="dates">Jan 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/cs253/lessons/48756010/concepts/484037880923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/web-development--cs253">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Intro to Java: Functional Programming</li>
+                <li class="title">Intro to Java: Functional Programming</li>
                 <li class="dates">Jan 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/ud282/lessons/8193672240/concepts/82227937880923">Course Details</a></li>
+                <li><a class="description" href="https://classroom.udacity.com/courses/ud282/lessons/8193672240/concepts/82227937880923">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Linux Command Line Basics</li>
+                <li class="title">Linux Command Line Basics</li>
                 <li class="dates">Jan 2017<span class="location">Udacity</span></li>
-                <li class="description"><a href="https://classroom.udacity.com/courses/ud595/lessons/4597278561/concepts/46968696010923">Course Details</a></li>
+                <li><a class="description" href="https://www.udacity.com/course/linux-command-line-basics--ud595">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Software Design</li>
+                <li class="title">Software Design</li>
                 <li class="dates">Sept 2016<span class="location">Portland Community College</span></li>
-                <li class="description"><a href="http://catalog.pcc.edu/programsanddisciplines/computerinformationsystems/#coursestext">Course Details</a></li>
+                <li><a class="description" href="http://catalog.pcc.edu/programsanddisciplines/computerinformationsystems/#coursestext">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Computer Science I</li>
+                <li class="title">Computer Science I</li>
                 <li class="dates">Sept 2016<span class="location">Portland Community College</span></li>
-                <li class="description"><a href="http://catalog.pcc.edu/programsanddisciplines/computerscience/#coursestext">Course Details</a></li>
+                <li><a class="description" href="http://catalog.pcc.edu/programsanddisciplines/computerscience/#coursestext">Course Details</a></li>
               </ul>
               <ul class="course-entry">
-                <li class="course-title">Computer Science II</li>
+                <li class="title">Computer Science II</li>
                 <li class="dates">Nov 2016<span class="location">Portland Community College</span></li>
-                <li class="description"><a href="http://catalog.pcc.edu/programsanddisciplines/computerscience/#coursestext">Course Details</a></li>
+                <li><a class="description" href="http://catalog.pcc.edu/programsanddisciplines/computerscience/#coursestext">Course Details</a></li>
               </ul>
             </div>
             <p><a class="readmore" href="#">Show more (+)</a></p>
@@ -279,7 +281,7 @@
 
         <!-- portfolio projects -->
         <div class="row">
-          <div id="portfolio-projects" class="col">
+          <div class="col">
             <hr>
             <h4><a href="https://stephanie-spears.github.io/stephanie-spears/">Portfolio Projects</a></h4>
             <ul class="porfolio-entry">
