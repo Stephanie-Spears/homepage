@@ -67,6 +67,12 @@ ul{
   list-style-type: none;
 }
 
+span{
+  text-shadow: none;
+  font-size: 15px;
+  color: black;
+}
+
 /* ---- My Classes ---- */
 .more-content {
   display: none;
@@ -76,7 +82,23 @@ ul{
   display: block;
 }
 
-/* ---- MAIN ----*/
+.dates, .location{
+  font-style: italic;
+  font-size: 14px;
+  color: gray;
+}
+.location {
+  float: right;
+}
+.description{
+  color: black;
+}
+.title{
+  color: #1199c3;
+}
+
+
+/* ---- Homepage ----*/
 #homepage-main{
   background-image: url("../img/Forest.jpg");
   background-repeat: no-repeat;
@@ -86,13 +108,11 @@ ul{
   height: 100%;
   border-bottom: 5px solid black;
 }
-
 #particles-js{
   width: 100%;
   height: 100%;
   position: absolute;
 }
-
 #homepage-content{
   border: 2px solid white;
   position: absolute;
@@ -100,27 +120,21 @@ ul{
   left: 40px;
 }
 
+/* ---- CV ----*/
 #cv-main{
   border-top: 5px solid black;
-
-  padding-top: 80px;
+  padding-top: 65px;
   width: 100%;
   background-color: #4a4a4a;
 }
-#cv-top h1{
+#cv-main h1{
   border-bottom: 1px solid #fafafa;
   color: steelblue;
 }
-#cv-top h1 span{
-  text-shadow: none;
-  font-size: 15px;
-  color: black;
-}
-#cv-top h4{
+#cv-main h4{
   color: steelblue;
   border-bottom: 1px solid #fafafa;
 }
-
 #contact-info{
   border: 2px solid white;
   padding: 1px;
@@ -139,17 +153,14 @@ ul{
 #contact-info span{
   color: steelblue;
 }
-
-#bioPic{
-  margin-bottom: 10px;
+#bioPic img{
+  margin-bottom: 15px;
   width: 200px;
   border: 2px solid gray;
 }
-
 #languages-list{
   padding-left: 0;
 }
-
 #languages-list li:nth-child(even){
   float: right;
   width: 40%;
@@ -159,9 +170,9 @@ ul{
   width: 60%;
 }
 
-#cv-entries .description{
-  color: black;
-}
+
+/* ---- CV ENTRIES----*/
+
 
 #cv-entries h4{
   color: gray;
@@ -183,21 +194,13 @@ ul{
   color: white;
 }
 
-.dates{
-  font-style: italic;
-  font-size: 14px;
-  color: gray;
-}
-#cv-entries .location {
-  float: right;
-  color: gray;
-}
 
-#cv-entries span{
-  font-size: 14px;
-  color: black;
+#portfolio-projects{
+  text-align: center;
 }
-
+#portfolio-projects img{
+  width: 100%;
+}
 /*.title, .title a {
   color: #1199c3;
 }*/
@@ -348,20 +351,11 @@ ul{
   color: black;
 }*/
 
-#portfolio-projects{
-  text-align: center;
-}
-#portfolio-projects img{
-  width: 100%;
-}
 
 
 
-/*Navbar*/
-/*#site-nav{
-  position: fixed;
-}*/
 
+/*Navigatin Content*/
 #brand-icon{
   width: 40px;
   height: 40px;
