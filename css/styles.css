@@ -67,8 +67,6 @@ ul{
   list-style-type: none;
 }
 
-
-
 /* ---- My Classes ---- */
 .more-content {
   display: none;
@@ -79,8 +77,6 @@ ul{
 }
 
 /* ---- MAIN ----*/
-
-
 #homepage-main{
   background-image: url("../img/Forest.jpg");
   background-repeat: no-repeat;
@@ -103,7 +99,6 @@ ul{
   bottom: 40px;
   left: 40px;
 }
-
 
 #cv-main{
   border-top: 5px solid black;
