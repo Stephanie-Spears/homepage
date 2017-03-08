@@ -50,19 +50,14 @@ var myHomepage = function(){
   $("#home-btn").click(function(){
     $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
   });
-  // $(".readmore").click(function(event){
-  //   event.preventDefault();
-  //   var displayButton =
-  //
-  // });
 
-
-    $(".readmore").on("click touchstart", function(event) {
-      var txt = $(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
-      $(this).parent().prev(".more-content").toggleClass("visible");
-      $(this).html(txt);
-      event.preventDefault();
-    });
+  $(".show-hide-btn").click(function(event){
+    event.preventDefault();
+    //condition("if") ?("then") value-if-true :("else") value-if-false
+    var text = $(".more-content").is(":hidden") ? "Show less (-)" : "Show more (+)";
+    $(".show-hide-btn").html(text);
+    $(".more-content").toggle("slow");
+  });
 
 
 }(); // the parens here cause the anonymous function to execute and return
