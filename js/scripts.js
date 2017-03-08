@@ -39,31 +39,13 @@ var myHomepage = function(){
   $("#home-btn").click(function(){
     $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
   });
-  $("#work-btn").click(function(event){
-    var text = ($("#work-more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
-    $("#work-btn").html(text);
-    $("#work-more-content").toggle("slow");
+  $(".show-hide-btn").click(function(event) {
+    var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
+    $(this).parent().prev(".more-content").toggleClass("visible");
+    $(this).html(txt);
     event.preventDefault();
   });
-  $("#education-btn").click(function(event){
-    var text = ($("#education-more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
-    $("#education-btn").html(text);
-    $("#education-more-content").toggle("slow");
-    event.preventDefault();
-  });
-  $("#courses-btn").click(function(event){
-    var text = ($("#courses-more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
-    $("#courses-btn").html(text);
-    $("#courses-more-content").toggle("slow");
-    event.preventDefault();
-  });
-  
-  // $(".show-hide-btn").click(function(event){
-  //   var text = ($(".more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
-  //   $(".show-hide-btn").html(text);
-  //   $(".more-content").toggle("slow");
-  //   event.preventDefault();
-  // });
+
 
 
 }(); // the parens here cause the anonymous function to execute and return
