@@ -78,10 +78,6 @@ span{
   display: none;
 }
 
-/*.visible {
-  display: block;
-}*/
-
 .dates, .location{
   font-style: italic;
   font-size: 14px;
