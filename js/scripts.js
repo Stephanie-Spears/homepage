@@ -57,6 +57,7 @@ var myHomepage = function(){
     $("#courses-more-content").toggle("slow");
     event.preventDefault();
   });
+  
   // $(".show-hide-btn").click(function(event){
   //   var text = ($(".more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
   //   $(".show-hide-btn").html(text);
