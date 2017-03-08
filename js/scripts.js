@@ -1,25 +1,21 @@
 var myHomepage = function(){
   //"private" variables
   var i = 0;
-
+  var x = 0;
+  var gallerySource = ["url(img/Forest.jpg)", "url(img/Arc1.jpg)", "url(img/Arc2.jpg)", "url(img/Juso.jpg)"];
+  var iconArray = ["img/gachapin1.png", "img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png"];
+  var animationArray = [ " rollIn", " flip", " rotateIn", " rubberBand"];
 
   //"private" methods
   var setBackground = function(){
-    var x = 0;
     function rotateGallery(){
-      var gallerySource = ["url(img/Arc1.jpg)", "url(img/Arc2.jpg)", "url(img/Juso.jpg)", "url(img/Forest.jpg)"];
-      if (x === gallerySource.length){
-        x = 0;
-      }
+      x = (x < gallerySource.length -1) ? ++x : 0;
       $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
-      i++;
     }
-    var galleryInterval = setInterval(function(){rotateGallery();},60000);
+    var galleryInterval = setInterval(function(){rotateGallery();},600000);
   };
 
   var setBrand = function(){
-    var iconArray = ["img/gachapin1.png", "img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png"];
-    var animationArray = [ " rollIn", " flip", " rotateIn", " rubberBand"];
 
     $("#brand-icon").removeClass(animationArray[i]);
     i = (i < iconArray.length -1) ? ++i : 0;
