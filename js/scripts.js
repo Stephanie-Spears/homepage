@@ -7,16 +7,12 @@ var myHomepage = function(){
   var animationArray = [ " rollIn", " flip", " rotateIn", " rubberBand"];
 
   //"private" methods
-  var setBackground = function(){
-    function rotateGallery(){
-      x = (x < gallerySource.length -1) ? ++x : 0;
-      $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
-    }
-    var galleryInterval = setInterval(function(){rotateGallery();},600000);
+  var rotateGallery = function(){
+    x = (x < gallerySource.length -1) ? ++x : 0;
+    $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
 
   var setBrand = function(){
-
     $("#brand-icon").removeClass(animationArray[i]);
     i = (i < iconArray.length -1) ? ++i : 0;
     $("#brand-icon").addClass(animationArray[i]);
@@ -24,15 +20,16 @@ var myHomepage = function(){
   };
 
 
-  setBackground();
+
+  setInterval(function(){rotateGallery();},600000);
+
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
   $("#nav-links").click(function(){
     $("#nav-icon").toggleClass("open");
-  $(this).collapse("hide");
+    $(this).collapse("hide");
   });
-
   $("#brand-icon").click(function(){
     setBrand();
   });
@@ -42,15 +39,12 @@ var myHomepage = function(){
   $("#home-btn").click(function(){
     $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
   });
-
   $(".show-hide-btn").click(function(event){
-    event.preventDefault();
-
     var text = ($(".more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
     $(".show-hide-btn").html(text);
     $(".more-content").toggle("slow");
+    event.preventDefault();
   });
-
 
 }(); // the parens here cause the anonymous function to execute and return
 
