@@ -40,7 +40,9 @@ var myHomepage = function(){
     $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
   });
   $(".show-hide-btn").click(function(event){
-    var text = ($(".more-content").is(":hidden")) ? "Show less (-)" : "Show more (+)";
+    var button = (document).getElementById($(this));
+    console.log($(this));
+    var text = ($(button).html === ("Show more (+)")) ? "Show less (-)" : "Show more (+)";
     $(".show-hide-btn").html(text);
     $(".more-content").toggle("slow");
     event.preventDefault();
