@@ -50,8 +50,9 @@ var myHomepage = function(){
   $("#home-btn").click(function(){
     $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
   });
-  // $(".readmore").click(function(){
-  //   var text = $(".more-content").is(":visible") ? "Show more (+)" : "Less (-)";
+  // $(".readmore").click(function(event){
+  //   event.preventDefault();
+  //   var displayButton =
   //
   // });
 

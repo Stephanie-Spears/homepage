@@ -176,20 +176,16 @@ span{
   color: gray;
   border-bottom: 1px solid gray;
 }
-
 #cv-entries .row:nth-child(odd){
   background-color: white;
   color: gray;
 }
-
-#cv-entries .education-entry:nth-child(odd){
-  background-color:  #52565b;
-}
 #cv-entries .work-entry:nth-child(odd), #cv-entries .course-entry:nth-child(odd){
   background-color: #f7f9ff;
 }
-
-
+#cv-entries .education-entry:nth-child(odd){
+  background-color:  #52565b;
+}
 #cv-entries .row:last-child{
   text-align: center;
 
