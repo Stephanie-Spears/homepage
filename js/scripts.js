@@ -12,8 +12,9 @@ var myHomepage = function(){
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
 
-  setInterval(function(){rotateGallery();},600000);
 
+  setInterval(function(){rotateGallery();},600000);
+  
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
