@@ -12,33 +12,29 @@ var myHomepage = function(){
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
 
-  var setBrand = function(){
-    $("#brand-icon").removeClass(animationArray[i]);
-    i = (i < iconArray.length -1) ? ++i : 0;
-    $("#brand-icon").addClass(animationArray[i]);
-    $("#brand-icon").attr("src", iconArray[i]);
-  };
-
-
-
   setInterval(function(){rotateGallery();},600000);
 
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
+
   $("#nav-links").click(function(){
     $("#nav-icon").toggleClass("open");
     $(this).collapse("hide");
   });
+
   $("#brand-icon").click(function(){
-    setBrand();
+    $(this).removeClass(animationArray[i]);
+    i = (i < iconArray.length -1) ? ++i : 0;
+    $(this).addClass(animationArray[i]);
+    $(this).attr("src", iconArray[i]);
   });
-  $("#cv-btn").click(function(){
-    $("html,body").animate({scrollTop: $("#cv-main").offset().top},"slow");
+
+  $(".nav-btn").click(function(){
+    var link = $(this).attr("id") === ("home-btn") ? "#homepage-main" : "#cv-main";
+    $("html, body").animate({scrollTop: $(link).offset().top}, "slow");
   });
-  $("#home-btn").click(function(){
-    $("html,body").animate({scrollTop: $("#homepage-main").offset().top},"slow");
-  });
+
   $(".show-hide-btn").click(function(event) {
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
