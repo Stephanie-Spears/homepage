@@ -39,7 +39,7 @@ var myHomepage = function(){
   $(".show-hide-btn").click(function(event) {
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
-    $(this).parent().prev(".more-content").toggleClass("blue-background:nth-child(odd)");
+    var test = $(this).parent().prev(".more-content").css("background-color", "red");
 
     $(this).html(txt);
     event.preventDefault();
