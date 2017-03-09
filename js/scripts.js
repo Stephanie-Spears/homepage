@@ -39,7 +39,10 @@ var myHomepage = function(){
   $(".show-hide-btn").click(function(event) {
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
-    var test = $(this).parent().prev(".more-content").css("background-color", "red");
+
+    // NOTE: js assignment overrides cs, so once clicked, i can toggle a cs class for more-content  maybe?
+
+    $(this).parent().prev(".more-content").css("background-color", "red");
 
     $(this).html(txt);
     event.preventDefault();

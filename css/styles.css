@@ -76,17 +76,18 @@ span{
 /* ---- My Classes ---- */
 .more-content {
   display: none;
-}
-/*.more-content ul:nth-child(even){
   background-color:  #52565b;
-}*/
+}
+.more-content ul:nth-child(even){
+  /*background-color:  #52565b;*/
+}
 .visible{
   display: block;
 }
-
+/*
 .visible ul:nth-child(even){
   background-color:  #52565b;
-}
+}*/
 /*.work-entry:nth-child(odd), .course-entry:nth-child(odd){
   background-color: #f7f9ff;
 }
