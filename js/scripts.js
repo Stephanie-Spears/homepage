@@ -14,7 +14,7 @@ var myHomepage = function(){
 
 
   setInterval(function(){rotateGallery();},600000);
-  
+
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
@@ -39,6 +39,8 @@ var myHomepage = function(){
   $(".show-hide-btn").click(function(event) {
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
+    $(this).parent().prev(".more-content").toggleClass("blue-background:nth-child(odd)");
+
     $(this).html(txt);
     event.preventDefault();
   });

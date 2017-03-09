@@ -80,6 +80,12 @@ span{
 .visible{
   display: block;
 }
+.work-entry:nth-child(odd), .course-entry:nth-child(odd){
+  background-color: #f7f9ff;
+}
+.education-entry:nth-child(odd){
+  background-color:  #52565b;
+}
 
 .dates, .location{
   font-style: italic;
@@ -96,6 +102,7 @@ span{
   font-size: 18px;
   color: #1199c3;
 }
+
 
 
 /* ---- Homepage ----*/
@@ -179,17 +186,8 @@ span{
   background-color: white;
   color: gray;
 }
-
-/* NOTE: use nth-of-type? ul */
-#cv-entries .work-entry:nth-child(odd), #cv-entries .course-entry:nth-child(odd){
-  background-color: #f7f9ff;
-}
-#cv-entries .education-entry:nth-child(odd){
-  background-color:  #52565b;
-}
 #cv-entries .row:last-child{
   text-align: center;
-
 }
 #cv-entries img{
   width: 100%;
