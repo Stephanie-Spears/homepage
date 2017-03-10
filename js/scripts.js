@@ -45,7 +45,7 @@ var myHomepage = function(){
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
     $(this).html(txt);
-        var position = $(this).position().top;
+    var position = $(this).position().top;
  $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
     event.preventDefault();
   });
