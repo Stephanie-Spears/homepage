@@ -74,34 +74,19 @@ span{
 }
 
 /* ---- My Classes ---- */
-.more-content {
+.more-content{
   display: none;
-  background-color:  #52565b;
-}
-.more-content ul:nth-child(even){
-  /*background-color:  #52565b;*/
 }
 .visible{
   display: block;
 }
-/*
-.visible ul:nth-child(even){
-  background-color:  #52565b;
-}*/
-/*.work-entry:nth-child(odd), .course-entry:nth-child(odd){
+
+.work-entry:nth-child(even), .course-entry:nth-child(even){
   background-color: #f7f9ff;
 }
-.education-entry:nth-child(odd){
+.education-entry:nth-child(even){
   background-color:  #52565b;
-}*/
-
-/*.education-entry:nth-of-type(1){
-  background-color:  #52565b;
-
-}*/
-/*.education-entry:nth-of-type(odd){
-  background-color:  #52565b;
-}*/
+}
 
 .dates, .location{
   font-style: italic;
