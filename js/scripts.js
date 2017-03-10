@@ -41,12 +41,12 @@ var myHomepage = function(){
 
     // var position = $(this).parent().prev(".more-content").is(":visible") ? $(this).position().top : -$(this).position().top;
     // alert(position);
+    var position = $(this).position().top;
 
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
     $(this).html(txt);
-    var position = $(this).position().top;
- $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
+    $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
     event.preventDefault();
   });
 
