@@ -165,6 +165,9 @@ span{
 #contact-info span{
   color: steelblue;
 }
+#contact-info a{
+  color: white;
+}
 
 #bioPic img{
   margin-bottom: 15px;
