@@ -30,8 +30,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          // "src": "img/gachapin1TwoTone.png",
-          "src": "img/gachapin1.svg",
+          "src": "img/gachapin1TwoTone.png",
           "width": 100,
           "height": 100
         }
@@ -100,7 +99,6 @@ particlesJS('particles-js',
         },
         "bubble": {
           "distance": 400,
-          // "size": 8,
           "size": 20,
 
           "duration": 2,
