@@ -39,13 +39,12 @@ var myHomepage = function(){
     // (position < 0) ? $("html, body").animate({scrollTop: $(this).offset().top + position}, "slow") :     $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
 
 
-    // var position = $(this).parent().prev(".more-content").is(":visible") ? $(this).position().top : -$(this).position().top;
-    // alert(position);
+    // var position = $(this).parent().prev(".more-content").is(":visible") ? $(this).position().top : $(this).parent().prev(".more-content").position().top ;
 
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
-    var position = $(this).position().top;
     $(this).html(txt);
+    var position = $(this).parent().prev(".more-content").position().top;
     $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
     event.preventDefault();
   });
