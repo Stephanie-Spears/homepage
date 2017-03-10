@@ -41,6 +41,10 @@ var myHomepage = function(){
     $("html, body").animate({scrollTop: $(this).offset().top - 600}, "slow");
     event.preventDefault();
   });
+  // $("#desktop-mobile-btn").click(function(){
+  //   responsiveSwitch.toggle();
+  //
+  // });
 
 }(); // the parens here cause the anonymous function to execute and return
 //condition("if") ? ("then") value-if-true :("else") value-if-false

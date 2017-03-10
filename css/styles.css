@@ -44,19 +44,23 @@ h1{
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-nav a{
+nav a, footer a{
   color: #f8f8f8;
 }
 
-nav a:hover{
+nav a:hover, footer a:hover{
   color: blue;
 }
 
-nav{
+nav, footer{
   border: 5px solid gray;
   background-color: rgba(111, 119, 132, 0.8);
   width: 100%;
   z-index: 10;
+}
+
+footer{
+  text-align: center;
 }
 
 header{
