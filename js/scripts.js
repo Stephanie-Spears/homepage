@@ -1,4 +1,6 @@
 var myHomepage = function(){
+  //back-end
+
   //"private" variables
   var i = 0;
   var x = 0;
@@ -13,39 +15,31 @@ var myHomepage = function(){
   };
 
 
+  //front-end
   setInterval(function(){rotateGallery();},600000);
-
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
-
   $("#nav-links").click(function(){
     $("#nav-icon").toggleClass("open");
     $(this).collapse("hide");
   });
-
   $("#brand-icon").click(function(){
     $(this).removeClass(animationArray[i]);
     i = (i < iconArray.length -1) ? ++i : 0;
     $(this).addClass(animationArray[i]);
     $(this).attr("src", iconArray[i]);
   });
-
   $(".nav-btn").click(function(){
     var link = $(this).attr("id") === ("home-btn") ? "#homepage-main" : "#cv-main";
     $("html, body").animate({scrollTop: $(link).offset().top}, "slow");
   });
-
   $(".show-hide-btn").click(function(event) {
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
-
     $(this).html(txt);
     event.preventDefault();
   });
 
-
-
 }(); // the parens here cause the anonymous function to execute and return
-
-//condition("if") ?("then") value-if-true :("else") value-if-false
+//condition("if") ? ("then") value-if-true :("else") value-if-false
