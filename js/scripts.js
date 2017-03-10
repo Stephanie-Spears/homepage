@@ -35,17 +35,14 @@ var myHomepage = function(){
     $("html, body").animate({scrollTop: $(link).offset().top}, "slow");
   });
   $(".show-hide-btn").click(function(event) {
-
-    // (position < 0) ? $("html, body").animate({scrollTop: $(this).offset().top + position}, "slow") :     $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
-
-
-    // var position = $(this).parent().prev(".more-content").is(":visible") ? $(this).position().top : $(this).parent().prev(".more-content").position().top ;
-
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
     $(this).html(txt);
-    var position = $(this).parent().prev(".more-content").position().top;
-    $("html, body").animate({scrollTop: $(this).offset().top - position}, "slow");
+
+    $("html, body").animate({scrollTop: $(this).offset().top - 600}, "slow");
+    // var position = $(this).parent().prev(".more-content").position().top;
+    // $("html, body").animate({scrollTop: $(this).offset().top}, "slow");
+
     event.preventDefault();
   });
 
