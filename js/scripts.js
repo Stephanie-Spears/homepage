@@ -1,6 +1,5 @@
 var myHomepage = function(){
   //back-end
-
   //"private" variables
   var i = 0;
   var x = 0;
