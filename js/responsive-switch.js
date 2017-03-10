@@ -5,7 +5,7 @@
 var responsiveSwitch = (function() {
 
 	// Screen configuration
-	var responsiveSwitchBreakpoint	= parseInt(window.responsiveSwitchBreakpoint) || 1024;
+	var responsiveSwitchBreakpoint	= parseInt(window.responsiveSwitchBreakpoint) || 750;
 
 	// Internal vars
 	var rsLinkCookieName			= "ResponsiveSwitch";
