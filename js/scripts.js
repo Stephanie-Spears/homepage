@@ -41,7 +41,7 @@ var myHomepage = function(){
 
     // var position = $(this).parent().prev(".more-content").is(":visible") ? $(this).position().top : -$(this).position().top;
     // alert(position);
-    var position = $(this).position().top;
+    var position = $(this).parent().prev(".more-content").position().top;
 
     var txt = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
