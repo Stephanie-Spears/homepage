@@ -41,6 +41,17 @@ var myHomepage = function(){
     $("html, body").animate({scrollTop: $(this).offset().top - 600}, "slow");
     event.preventDefault();
   });
+  $(".desktop-mobile-view").click(function(){
+    var w = ($(document).width());
+    console.log(w);
+    alert(w);
+    // event.preventDefault();
+  });
+
+  // $(".rs-links").click(function(event){
+  //   event.preventDefault();
+  //   responsiveSwitch.viewToggle();
+  // });
 
 }(); // the parens here cause the anonymous function to execute and return
 //condition("if") ? ("then") value-if-true :("else") value-if-false

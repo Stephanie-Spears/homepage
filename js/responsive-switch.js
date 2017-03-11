@@ -93,7 +93,7 @@ var responsiveSwitch = (function() {
 		    		linkNode.addEventListener("click", function(e) {
 						e = e || window.event;
 						e.preventDefault();
-		    			toggle();
+		    			viewToggle();
 		    		}, false);
 		        }
 	        }
@@ -102,7 +102,7 @@ var responsiveSwitch = (function() {
 	}
 
 	// Toggle viewport and links
-	function toggle() {
+	function viewToggle() {
 		rsViewport();
 		rsLink();
 	}
@@ -151,7 +151,7 @@ var responsiveSwitch = (function() {
 
 	// PUBLIC API methods
 	return {
-		toggle : toggle
+		viewToggle : viewToggle
 	};
 
 })();
