@@ -43,8 +43,12 @@ var myHomepage = function(){
   });
   $(".desktop-mobile-view").click(function(){
     var w = ($(document).width());
-    console.log(w);
-    alert(w);
+    // w < 414 ?
+    var viewport = document.querySelector("meta[name=viewport]");
+    // w < 414 ? viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
+// viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+console.log("document width: " + w);
+    console.log(viewport);
     // event.preventDefault();
   });
 
