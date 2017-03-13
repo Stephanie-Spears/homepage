@@ -185,13 +185,12 @@
         '<button data-dismiss="previewer" title="Close">&times;</button>' +
         '<ul class="previewer-nav">' +
           '<li><a data-preview="phone" title="Phone"><i></i></a></li>' +
-          '<li><a data-preview="tablet" title="Tablet"><i></i></a></li>' +
-          '<li><a data-preview="laptop" title="Laptop"><i></i></a></li>' +
+
           '<li><a data-preview="desktop" title="Desktop"><i></i></a></li>' +
         '</ul>' +
       '</div>' +
       '<div class="previewer-mainbody">' +
-        '<iframe scrolling="no"></iframe>' +
+        '<iframe scrolling="yes"></iframe>' +
       '</div>' +
     '</div>'
   );
