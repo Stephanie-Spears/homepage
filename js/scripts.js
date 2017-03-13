@@ -57,7 +57,7 @@ var myHomepage = function(){
 // });
 
 // With method
-$('body').previewer('hide');
+$('body').previewer('show');
 
 // // Set previewer options
 // $().previewer(options);
