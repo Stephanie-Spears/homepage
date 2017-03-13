@@ -52,8 +52,8 @@ var myHomepage = function(){
   });
 
 
-  var viewport = (w < 500) ?
-  $("body").previewer({show: true, type: "phone"}) : $("body").previewer({show: true, type: "desktop"});
+  // var viewport = (w < 500) ?
+  // $("body").previewer({show: true, type: "phone"}) : $("body").previewer({show: true, type: "desktop"});
 
   // With option
 // $("body").previewer({
