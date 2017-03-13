@@ -58,14 +58,12 @@ $('body').previewer({
 // With method
 $('body').previewer('show');
 
+// Set previewer options
+$().previewer(options);
 
+// Change the global default options
+$.fn.previewer.setDefaults(options);
 
-//   $('body').previewer('show');
-//   // Set previewer options
-// $().previewer(options);
-//
-// // Change the global default options
-// $.fn.previewer.setDefaults(options);
 
 
 
