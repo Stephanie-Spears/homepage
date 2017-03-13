@@ -51,13 +51,14 @@ var myHomepage = function(){
     event.preventDefault();
   });
 
-//   // With option
-// $('body').previewer({
-//   show: true
-// });
+  // With option
+$('body').previewer({
+  show: false
+
+});
 
 // With method
-$('body').previewer('show');
+// $('body').previewer('show');
 
 // // Set previewer options
 // $().previewer(options);
