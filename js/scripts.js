@@ -53,11 +53,11 @@ var myHomepage = function(){
 
   // With option
 $("body").previewer({
-  show: true
+  show: false
 });
 
 // With method
-$('body').previewer('show');
+$('body').previewer('hide');
 
 // // Set previewer options
 // $().previewer(options);
