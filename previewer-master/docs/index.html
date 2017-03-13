@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple jQuery page preview plugin.">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, jQuery plugin, page preview, front-end, frontend, web development">
+  <meta name="author" content="Fengyuan Chen">
+  <title>Previewer</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/previewer.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- header -->
+  <header class="navbar navbar-static-top docs-header" id="top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#navbar-collapse-1" data-toggle="collapse" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0);">Previewer</a>
+      </div>
+      <nav class="collapse navbar-collapse" id="navbar-collapse-1" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://github.com/fengyuanchen/previewer/blob/master/README.md" target="_top">Docs</a></li>
+          <li><a href="http://github.com/fengyuanchen/previewer" target="_top">Github</a></li>
+          <li><a href="http://chenfengyuan.com" target="_top">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron docs-jumbotron">
+    <div class="container">
+      <h1>Previewer <small class="version">v0.1.0</small></h1>
+      <p class="lead">A simple jQuery page preview plugin.</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <h2 class="page-header">Overview</h2>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="thumbnail">
+          <img src="img/starry.jpg" alt="Starry">
+          <div class="caption">
+            <h3>Phone</h3>
+            <p>Preview on extra small screen width as phone.</p>
+            <p><a href="?previewer" class="btn btn-primary" target="_top" role="button">Launch</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="thumbnail">
+          <img src="img/starry-2.jpg" alt="Starry 2">
+          <div class="caption">
+            <h3>Tablet</h3>
+            <p>Preview on small screen width as tablet.</p>
+            <p><a href="?previewer=tablet" class="btn btn-primary" target="_top" role="button">Launch</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="thumbnail">
+          <img src="img/starry-3.jpg" alt="Starry 3">
+          <div class="caption">
+            <h3>Laptop</h3>
+            <p>Preview on middle screen width as laptop.</p>
+            <p><a href="?previewer=laptop" class="btn btn-primary" target="_top" role="button">Launch</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="thumbnail">
+          <img src="img/starry-4.jpg" alt="Starry 4">
+          <div class="caption">
+            <h3>Desktop</h3>
+            <p>Preview on large screen width as desktop.</p>
+            <p><a href="?previewer=desktop" class="btn btn-primary" target="_top" role="button">Launch</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="docs-footer">
+    <div class="container">
+      <span class="hearts"></span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/previewer.js"></script>
+</body>
+</html>

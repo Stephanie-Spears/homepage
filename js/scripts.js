@@ -15,18 +15,16 @@ var myHomepage = function(){
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
-  var changeViewport = function(){
-    var w = $(document).width();
-    var text = w <= 414 ? "Desktop View" : "Mobile View";
-    $(".desktop-mobile-view").html(text);
-    return text;
-  };
+  // var changeViewport = function(){
+  //   var w = $(document).width();
+  //   var text = w <= 414 ? "Desktop View" : "Mobile View";
+  //   $(".desktop-mobile-view").html(text);
+  // };
 
 
   //front-end
   setInterval(function(){rotateGallery();},600000);
-  var changeViewportText = changeViewport();
-  console.log(changeViewportText);
+  // changeViewport();
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
@@ -50,35 +48,12 @@ var myHomepage = function(){
     $(this).html(moreLessText);
     $("html, body").animate({scrollTop: $(this).offset().top - 600}, "slow");
     event.preventDefault();
-    // event.stopPropagation();
   });
-  var w = $(document).width();
-  $(".desktop-mobile-view").click(function(){
-
-    // var myWidth = w < 500 ? 410 : 800;
-    // viewport.setAttribute('content', 'width=' + myWidth + ', maximum-scale=1.0, user-scalable=1');
-    // console.log(myWidth);
-
-    // var myViewport = w <= 412 ? viewport.setAttribute('content', 'width=1401, initial-scale=0.34, maximum-scale=1.0, user-scalable=1') : viewport.setAttribute('content', 'width=410, initial-scale=0.34, maximum-scale=1.0, user-scalable=1');
-
-    // else {
-        // viewport.setAttribute('content', 'width=640, initial-scale=0.47, maximum-scale=1.0, user-scalable=1');
-    // $(".desktop-mobile-view").html(changeViewportText); //this just gets the value that's already in it. maybe call function itself
-
-    // w < 414 ? viewport.setAttribute("content", "width=device-width, initial-scale=1.0") : ;
-// viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
-// console.log("document width: " + w);
-    // console.log("viewport: " + viewport);
-    // event.preventDefault();
-  });
-//   document.querySelector('#modal').addEventListener('click', function(e){
-//   e.stopPropagation();
-//   // carry on, nothing to see here
-// });
-
-  // $(".rs-links").click(function(event){
+  // var w = $(document).width();
+  $('body').previewer('show');
+  // $(".desktop-mobile-view").click(function(){
+  //
   //   event.preventDefault();
-  //   responsiveSwitch.viewToggle();
   // });
 
 }(); // the parens here cause the anonymous function to execute and return

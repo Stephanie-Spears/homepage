@@ -1,0 +1,44 @@
+{
+  "name": "previewer",
+  "description": "A simple jQuery page preview plugin.",
+  "main": [
+    "dist/previewer.js",
+    "dist/previewer.css"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "page",
+    "preview",
+    "jquery",
+    "plugin",
+    "html",
+    "css",
+    "javascript",
+    "front-end",
+    "web",
+    "development"
+  ],
+  "authors": [
+    "Fengyuan Chen"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "test",
+    "docs"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~1.11.3"
+  }
+}
