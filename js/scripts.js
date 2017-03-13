@@ -15,16 +15,16 @@ var myHomepage = function(){
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
-  // var changeViewport = function(){
-  //   var w = $(document).width();
-  //   var text = w <= 414 ? "Desktop View" : "Mobile View";
-  //   $(".desktop-mobile-view").html(text);
-  // };
+  var changeViewport = function(){
+    var w = $(document).width();
+    var text = w <= 414 ? "Desktop View" : "Mobile View";
+    $(".desktop-mobile-view").html(text);
+  };
 
 
   //front-end
   setInterval(function(){rotateGallery();},600000);
-  // changeViewport();
+  changeViewport();
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
@@ -49,12 +49,25 @@ var myHomepage = function(){
     $("html, body").animate({scrollTop: $(this).offset().top - 600}, "slow");
     event.preventDefault();
   });
-  // var w = $(document).width();
-  $('body').previewer('show');
-  // $(".desktop-mobile-view").click(function(){
-  //
-  //   event.preventDefault();
-  // });
+
+  // With option
+$('body').previewer({
+  show: true
+});
+
+// With method
+$('body').previewer('show');
+
+
+
+//   $('body').previewer('show');
+//   // Set previewer options
+// $().previewer(options);
+//
+// // Change the global default options
+// $.fn.previewer.setDefaults(options);
+
+
 
 }(); // the parens here cause the anonymous function to execute and return
 //condition("if") ? ("then") value-if-true :("else") value-if-false
