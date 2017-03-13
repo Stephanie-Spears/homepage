@@ -3,6 +3,7 @@ var myHomepage = function(){
 
   //"private" variables
   var viewport = document.querySelector("meta[name=viewport]");
+  console.log(viewport);
 
   var i = 0;
   var x = 0;
@@ -50,20 +51,22 @@ var myHomepage = function(){
     event.preventDefault();
   });
 
-  // With option
-$('body').previewer({
-  show: true
-});
+//   // With option
+// $('body').previewer({
+//   show: true
+// });
 
 // With method
-$('body').previewer('show');
+$('body').previewer('hide');
 
-// Set previewer options
-$().previewer(options);
+// // Set previewer options
+// $().previewer(options);
 
-// Change the global default options
-$.fn.previewer.setDefaults(options);
+// // Change the global default options
+// $.fn.previewer.setDefaults(options);
 
+// //methods ... show() hide() destroy ()
+// $().previewer('method');
 
 
 
