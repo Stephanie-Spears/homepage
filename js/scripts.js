@@ -53,8 +53,7 @@ var myHomepage = function(){
 
   // With option
 $('body').previewer({
-  show: false
-
+  show: true
 });
 
 // With method
