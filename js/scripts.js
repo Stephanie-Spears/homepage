@@ -2,7 +2,7 @@ var myHomepage = function(){
   //back-end
 
   //"private" variables
-  var viewport = document.querySelector("meta[name=viewport]");
+  // var viewport = document.querySelector("meta[name=viewport]");
   var w = $(window).width();
 
   var i = 0;
@@ -52,16 +52,9 @@ var myHomepage = function(){
   });
 
 
-  w < 500 ?
-  $("body").previewer({
-      show: true,
-      type: "phone"
-    }) :
-
-  $("body").previewer({
-      show: true,
-      type: "desktop"
-    });
+  // var viewport = (w < 500) ?
+  var viewport = (w < 500) ?
+  $("body").previewer({show: true, type: "phone"}) : $("body").previewer({show: true, type: "desktop"});
 
   // With option
 // $("body").previewer({
