@@ -53,11 +53,12 @@ var myHomepage = function(){
 
   // With option
 $("body").previewer({
-  show: true
+  show: true,
+  type: 'laptop'
 });
 
 // With method
-$('body').previewer('show');
+// $('body').previewer('show');
 
 // // Set previewer options
 // $().previewer(options);
