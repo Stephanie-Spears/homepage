@@ -2,11 +2,12 @@ var myHomepage = function(){
   //back-end
 
   //"private" variables
-  // var viewport = document.querySelector("meta[name=viewport]");
-  var viewport = document.querySelectorAll("meta[name=viewport]");
+  var viewport = document.querySelector("meta[name=viewport]");
   console.log(viewport);
-  var w = $(window).width();
-  console.log(w);
+  var viewportAll = document.querySelectorAll("meta[name=viewport]");
+  console.log(viewportAll);
+  var windowWidth = $(window).width();
+  console.log(windowWidth);
 
   var i = 0;
   var x = 0;
@@ -22,11 +23,16 @@ var myHomepage = function(){
   };
   var changeViewport = function(){
     // var w = $(document).width();
-    var text = w <= 414 ? "Desktop View" : "Back to Mobile View";
+    var text = windowWidth <= 414 ? "Desktop View" : "Back to Mobile View";
     $(".desktop-mobile-view").html(text);
   };
 
-  var mobileDevice = w < 768 ? true : false;
+  // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass(".desktop-mobile-view");
+
+  // var mobileDevice = windowWidth < 768 ? $(navbar-nav).firstChild : false;
+
+  var mobileDevice = windowWidth < 768 ? true : false;
+  var test = mobileDevice ? toggleClass(".desktop-mobile-view") : toggleClass(".desktop-mobile-view");
   changeViewport();
 
   //front-end

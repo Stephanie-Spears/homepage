@@ -78,6 +78,10 @@ span{
 }
 
 /* ---- My Classes ---- */
+.desktop-mobile-view{
+  display: none;
+}
+
 .more-content{
   display: none;
 }
