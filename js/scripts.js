@@ -3,7 +3,10 @@ var myHomepage = function(){
 
   //"private" variables
   // var viewport = document.querySelector("meta[name=viewport]");
+  var viewport = doc.querySelectorAll("meta[name=viewport]");
+  console.log(viewport);
   var w = $(window).width();
+  console.log(w);
 
   var i = 0;
   var x = 0;
@@ -27,7 +30,7 @@ var myHomepage = function(){
   setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
     changeViewport();
-  }
+  });
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });
