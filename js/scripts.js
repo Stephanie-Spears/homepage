@@ -7,7 +7,6 @@ var myHomepage = function(){
   // var viewportAll = document.querySelectorAll("meta[name=viewport]");
   // console.log(viewportAll);
   var windowWidth = $(window).width();
-  console.log(windowWidth);
 
   var i = 0;
   var x = 0;
@@ -44,12 +43,20 @@ var myHomepage = function(){
 
   //front-end
   // changeViewport();
-  var mobileDevice = windowWidth < 768 ? true : false;
+  var checkViewport = function(){
+    var mobileDisplay = $(window).width() < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+    $(".desktop-mobile-view").click(function(){
+      $(this).html("Back To Mobile");
+      $(window).width();
+      // console.log()
+    });
+  };
 
-  var mobileDisplay = mobileDevice = true ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
 
-  var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass("mobile-view") : $(".desktop-mobile-view").toggleClass("desktop-mobile-view");
+  // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass("mobile-view") : $(".desktop-mobile-view").toggleClass("desktop-mobile-view");
 
+  // changeViewport();
+  checkViewport();
   setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
     // changeViewport();
