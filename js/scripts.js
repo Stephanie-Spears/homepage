@@ -16,16 +16,18 @@ var myHomepage = function(){
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
-  // var changeViewport = function(){
-  //   var w = $(document).width();
-  //   var text = w <= 414 ? "Desktop View" : "Mobile View";
-  //   $(".desktop-mobile-view").html(text);
-  // };
+  var changeViewport = function(){
+    var w = $(document).width();
+    var text = w <= 414 ? "Desktop View" : "Mobile View";
+    $(".desktop-mobile-view").html(text);
+  };
 
 
   //front-end
   setInterval(function(){rotateGallery();},600000);
-  // changeViewport();
+  $(".desktop-mobile-view").click(function(){
+    changeViewport();
+  }
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
   });

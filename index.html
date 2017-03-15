@@ -8,24 +8,10 @@
     <meta name="author" content="Stephanie Spears">
     <title>Stephanie Spears</title>
     <link rel="icon" href="img/gachapin1.png" type="image/png">
-    <link  href="css/previewer.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!--Navigation Content-->
-    <!-- <div class="previewer-container">
-      <div class="previewer-sidebar">
-        <button data-dismiss="previewer" title="Close">&times;</button>
-        <ul class="previewer-nav">
-          <li><a data-preview="phone" title="Phone"><i></i></a></li>
-
-          <li><a data-preview="desktop" title="Desktop"><i></i></a></li>
-        </ul>
-      </div>
-      <div class="previewer-mainbody">
-        <iframe scrolling="no"></iframe>
-      </div>
-    </div> -->
     <nav class="navbar navbar-toggleable-sm fixed-top">
       <div class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-links">
         <div id="nav-icon"  class="animated rubberBand">
@@ -43,10 +29,7 @@
       <div id="nav-links" class="collapse navbar-collapse">
         <hr>
         <div class="navbar-nav">
-          <a href="#" onclick="Mobify.desktop(); return false;">View Full Site
-          </a>
-          <a href="#" onclick="document.cookie='mobify-path=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';location.reload()">Back to Mobile
-          </a>
+          <a href="#" class="desktop-mobile-view">Desktop View</a>
           <a id="home-btn" class="nav-btn nav-item nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
           <a class="nav-btn nav-item nav-link" href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i> CV</a>
           <a class="nav-item nav-link" href="https://stephanie-spears.github.io/stephanie-spears/"><i class="fa fa-cubes" aria-hidden="true"></i> Portfolio</a>
@@ -305,20 +288,16 @@
       </div><!-- end entries div -->
     </div><!-- end cv-main container -->
     <footer>
-      <a href="#" class="desktop-mobile-view"></a>
-      <!-- <a href="#" class="rs-link" data-link-desktop="Switch to desktop version" data-link-responsive="Switch to mobile version" data-always-visible="true"></a> -->
+      <a href="#" class="desktop-mobile-view">Desktop View</a>
     </footer>
 
   <!-- scripts -->
   <script src="js/jQuery.js"></script>
   <script src="js/previewer.js"></script>
-
-  <!-- <script src="js/previewer.min.js"></script> -->
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/particles.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/mobify.min.js"></script>
   <script src="js/scripts.js"></script>
   </body>
 </html>
