@@ -32,7 +32,7 @@ var myHomepage = function(){
   // var mobileDevice = windowWidth < 768 ? $(navbar-nav).firstChild : false;
 
   var mobileDevice = windowWidth < 768 ? true : false;
-  var test = mobileDevice ? toggleClass(".desktop-mobile-view") : toggleClass(".desktop-mobile-view");
+  // var test = mobileDevice ? toggleClass(".desktop-mobile-view") : toggleClass(".desktop-mobile-view");
   changeViewport();
 
   //front-end
