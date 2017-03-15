@@ -3,7 +3,7 @@ var myHomepage = function(){
 
   //"private" variables
   // var viewport = document.querySelector("meta[name=viewport]");
-  var viewport = doc.querySelectorAll("meta[name=viewport]");
+  var viewport = document.querySelectorAll("meta[name=viewport]");
   console.log(viewport);
   var w = $(window).width();
   console.log(w);
@@ -14,22 +14,25 @@ var myHomepage = function(){
   var iconArray = ["img/gachapin1.png", "img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png"];
   var animationArray = [ " rollIn", " flip", " rotateIn", " rubberBand"];
 
+
   //"private" methods
   var rotateGallery = function(){
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
   var changeViewport = function(){
-    var w = $(document).width();
-    var text = w <= 414 ? "Desktop View" : "Mobile View";
+    // var w = $(document).width();
+    var text = w <= 414 ? "Desktop View" : "Back to Mobile View";
     $(".desktop-mobile-view").html(text);
   };
 
+  var mobileDevice = w < 768 ? true : false;
+  changeViewport();
 
   //front-end
   setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
-    changeViewport();
+
   });
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
