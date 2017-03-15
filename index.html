@@ -10,6 +10,7 @@
     <link rel="icon" href="img/gachapin1.png" type="image/png">
     <link  href="css/previewer.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/mobify.min.js"></script>
   </head>
   <body>
     <!--Navigation Content-->
@@ -43,6 +44,11 @@
       <div id="nav-links" class="collapse navbar-collapse">
         <hr>
         <div class="navbar-nav">
+          <a href="#" onclick="Mobify.desktop(); return false;">View Full Site
+          </a>
+          <a href="#" onclick="document.cookie='mobify-path=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';location.reload()">
+    Back to Mobile
+</a>
           <a id="home-btn" class="nav-btn nav-item nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
           <a class="nav-btn nav-item nav-link" href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i> CV</a>
           <a class="nav-item nav-link" href="https://stephanie-spears.github.io/stephanie-spears/"><i class="fa fa-cubes" aria-hidden="true"></i> Portfolio</a>
