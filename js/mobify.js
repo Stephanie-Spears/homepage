@@ -59,7 +59,7 @@ Utils.clone = function(obj) {
 
 // Some url helpers
 /**
- * Takes a url, relative or absolute, and absolutizes it relative to the current 
+ * Takes a url, relative or absolute, and absolutizes it relative to the current
  * document's location/base, with the assistance of an a element.
  */
 var _absolutifyAnchor = document.createElement("a");
@@ -69,7 +69,7 @@ Utils.absolutify = function(url) {
 };
 
 /**
- * Takes an absolute url, returns true if it is an http/s url, false otherwise 
+ * Takes an absolute url, returns true if it is an http/s url, false otherwise
  * (e.g. mailto:, gopher://, data:, etc.)
  */
 var _httpUrlRE = /^https?/;
@@ -224,7 +224,7 @@ Utils.matchMedia = function(doc) {
 // iOS 4.3 and some Android 2.X.X have a non-typical "loaded" readyState,
 // which is an acceptable readyState to start capturing on, because
 // the data is fully loaded from the server at that state.
-// For some IE (IE10 on Lumia 920 for example), interactive is not 
+// For some IE (IE10 on Lumia 920 for example), interactive is not
 // indicative of the DOM being ready, therefore "complete" is the only acceptable
 // readyState for IE10
 // Credit to https://github.com/jquery/jquery/commit/0f553ed0ca0c50c5f66377e9f2c6314f822e8f25
@@ -285,7 +285,7 @@ Utils.waitForReady = function(doc, callback) {
     // Cannot rely on using DOMContentLoaded because this event prematurely fires
     // for some IE10s.
     var ready = false;
-    
+
     var onReady = function() {
         if (!ready) {
             ready = true;
@@ -1056,7 +1056,7 @@ return Capture;
             if (!matches(target)) {
                 return;
             }
-            
+
             // Newer browsers support `e.defaultPrevented`. FF 4.0 supports `e.getPreventDefault()`
             var defaultPrevented = (typeof e.defaultPrevented !== "undefined") ?
                 e.defaultPrevented :
@@ -1098,7 +1098,7 @@ return Capture;
             var anchorRe = /^#([^\s]*)/;
             var match = anchor.match(anchorRe);
             var target;
-            
+
             // Find the target, if any
             if (match && match[1] === "") {
                 target = doc.body;
@@ -1174,7 +1174,7 @@ CssOptimize.getCssUrl = function(url, options) {
 };
 
 /**
- * Rewrite the href of a stylesheet referencing `<link>` element to go through 
+ * Rewrite the href of a stylesheet referencing `<link>` element to go through
  * our service.
  */
 CssOptimize._rewriteHref = function(element, options) {
@@ -1214,7 +1214,7 @@ CssOptimize.optimize = function(elements, options) {
 
 /**
  * An 'error' event handler designed to be set using an "onerror" attribute that
- * will set the target elements "href" attribute to the value of its 
+ * will set the target elements "href" attribute to the value of its
  * "data-orig-href" attribute, if one exists.
  */
 var restoreOriginalHref = CssOptimize.restoreOriginalHref = function(event) {
@@ -1304,9 +1304,9 @@ ResizeImages.dataUriWebpDetect = function(callback) {
         persistWebpSupport(support);
         if (callback) callback(support);
         };
-    // this webp generated with Mobify image resizer from 
-    // http://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png passed 
-    // through the Mobify Image resizer: 
+    // this webp generated with Mobify image resizer from
+    // http://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png passed
+    // through the Mobify Image resizer:
     // http://ir0.mobify.com/webp/http://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png
     image.src = 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQABgBwlpAADcAD+/gbQAA==';
 };
@@ -1322,7 +1322,7 @@ ResizeImages.supportsWebp = function(callback) {
 
     // Return early if we have persisted WEBP support
     if (Utils.supportsLocalStorage()) {
-        
+
         // Check if WEBP support has already been detected
         var webpSupport;
         var storedSupport = localStorage.getItem(localStorageWebpKey);
@@ -1330,7 +1330,7 @@ ResizeImages.supportsWebp = function(callback) {
         // Only JSON.parse if storedSupport is not null, or else things
         // will break on Android 2.3
         storedSupport && (webpSupport = JSON.parse(storedSupport));
-        
+
         // Grab previously cached support value in localStorage.
         if (webpSupport && (Date.now() - webpSupport.date < 604800000)) {
             return webpSupport.supported;
@@ -1437,7 +1437,7 @@ ResizeImages._rewriteSrcAttribute = function(element, opts, srcVal){
 };
 
 /**
- * Modifies src of `<source />` children of a `<picture>` element to use image 
+ * Modifies src of `<source />` children of a `<picture>` element to use image
  * resizer
  */
 ResizeImages._resizeSourceElement = function(element, opts, rootSrc) {
@@ -1453,7 +1453,7 @@ ResizeImages._resizeSourceElement = function(element, opts, rootSrc) {
 };
 
 /**
- * Takes a picture element and calls _resizeSourceElement on its `<source />` 
+ * Takes a picture element and calls _resizeSourceElement on its `<source />`
  * children
  */
 ResizeImages._crawlPictureElement = function(el, opts) {
@@ -1477,23 +1477,23 @@ ResizeImages._crawlPictureElement = function(el, opts) {
 };
 
 /**
- * Searches a list of target dimensions for the smallest one that is greater than 
- * the passed value and return it, or return the greatst value if none are 
+ * Searches a list of target dimensions for the smallest one that is greater than
+ * the passed value and return it, or return the greatst value if none are
  * greater.
  *
- * Popular device resolutions: 
+ * Popular device resolutions:
  * iPhone 3Gs - 320x480
  * iPhone 4 - 640x960
  * iPhone 5 - 650x1156
- * 
+ *
  * Galaxy SIII/Nexus 4/Nexus 7 - 720x1280
  * Galaxy SIV/Nexus 5 - 1080x1920
- * 
+ *
  * iPad (non-retina) - 1024x768
  * iPad (retina) - 2048x1536
  *
- * A larger list of target dimensions would include 720px, 800px, 1024px, 1280px 
- * and 1920px but they have been omitted due tot heir proximity to other, larger 
+ * A larger list of target dimensions would include 720px, 800px, 1024px, 1280px
+ * and 1920px but they have been omitted due tot heir proximity to other, larger
  * values
  */
 var targetDims = [320, 640, 768, 1080, 1536, 2048, 4000];
@@ -1550,8 +1550,8 @@ ResizeImages._shouldResize = function(document) {
 };
 
 /**
- * Processes options passed to `resize()`. Takes an options object that 
- * potentially has height and width set in css pixels, returns an object where 
+ * Processes options passed to `resize()`. Takes an options object that
+ * potentially has height and width set in css pixels, returns an object where
  * they are expressed in device pixels, and other default options are set.
  */
 ResizeImages.processOptions = function(options) {
@@ -1606,7 +1606,7 @@ ResizeImages.processOptions = function(options) {
 
 /**
  * Searches the collection for image elements and modifies them to use
- * the Image Resize service. Pass `options` to modify how the images are 
+ * the Image Resize service. Pass `options` to modify how the images are
  * resized.
  */
 ResizeImages.resize = function(elements, options) {
@@ -1737,7 +1737,7 @@ return ResizeImages;
     };
 
     /**
-     * Returns value of `key` if it is in the cache and marks it as used now if 
+     * Returns value of `key` if it is in the cache and marks it as used now if
      * `touch` is true.
      */
     httpCache.get = function(key, touch) {
@@ -1790,7 +1790,7 @@ return ResizeImages;
      * attempts.
      */
 
-    // save mutex to prevent multiple concurrent saves and saving before `load` 
+    // save mutex to prevent multiple concurrent saves and saving before `load`
     // event for document
     var canSave = true;
     httpCache.save = function(callback) {
@@ -1889,7 +1889,7 @@ return ResizeImages;
     };
 
     /**
-     * Returns `false` if a response is "fresh" by HTTP/1.1 caching rules or 
+     * Returns `false` if a response is "fresh" by HTTP/1.1 caching rules or
      * less than ten minutes old. Treats invalid headers as stale.
      */
     httpCache.utils.isStale = function(resource, options) {
@@ -1909,8 +1909,8 @@ return ResizeImages;
             return false;
         }
 
-        // If a cache override parameter is present, see if the age of the 
-        // response is less than the override, cacheOverrideTime is in minutes, 
+        // If a cache override parameter is present, see if the age of the
+        // response is less than the override, cacheOverrideTime is in minutes,
         // turn it off by setting it to false
         if (options && (overrideTime = options.overrideTime) && date) {
             return (now > (date + (overrideTime * 60 * 1000)));
@@ -1927,7 +1927,7 @@ return ResizeImages;
                 // Convert the max-age directive to ms.
                 return now > (date + (cacheControl['max-age'] * 1000));
             } else {
-                // there was no max-age or this was marked no-store or 
+                // there was no max-age or this was marked no-store or
                 // no-cache, and so is stale
                return true;
             }
@@ -1938,13 +1938,13 @@ return ResizeImages;
             return now > expires;
         }
 
-        // Fresh if less than 10% of difference between date and 
+        // Fresh if less than 10% of difference between date and
         // last-modified old, up to a day
         if (lastModified && (lastModified = Date.parse(lastModified)) && date) {
             modifiedAge = date - lastModified;
             age = now - date;
-            // If the age is less than 10% of the time between the last 
-            // modification and the response, and the age is less than a 
+            // If the age is less than 10% of the time between the last
+            // modification and the response, and the age is less than a
             // day, then it is not stale
             if ((age < 0.1 * modifiedAge) && (age < ONE_DAY_IN_MS)) {
                 return false;
@@ -1993,14 +1993,14 @@ return ResizeImages;
      *   <script>Jazzcat.exec("http://code.jquery.com/jquery.js")</script>
      *   <script>$(function() { alert("helo joe"); })</script>
      *
-     * 
-     * Takes an option argument, `options`, an object whose properties define 
-     * options that alter jazzcat's javascript loading, caching and execution 
+     *
+     * Takes an option argument, `options`, an object whose properties define
+     * options that alter jazzcat's javascript loading, caching and execution
      * behaviour. Right now the options default to `Jazzcat.defaults` which
      * can be overridden. More details on options:
      *
-     * - `cacheOverrideTime` :  An integer value greater than 10 that will 
-     *                          override the freshness implied by the HTTP 
+     * - `cacheOverrideTime` :  An integer value greater than 10 that will
+     *                          override the freshness implied by the HTTP
      *                          caching headers set on the reource.
      * - `responseType` :       This value defaults to `jsonp`, which will
      *                          make a request for a jsonp response which
@@ -2020,7 +2020,7 @@ return ResizeImages;
     Jazzcat.cacheLoaderInserted = false;
     Jazzcat.optimizeScripts = function(scripts, options) {
         options = options || {};
-        
+
         if (options && options.cacheOverrideTime !== undefined) {
             Utils.extend(httpCache.options,
               {overrideTime: options.cacheOverrideTime});
@@ -2035,7 +2035,7 @@ return ResizeImages;
 
         options = Utils.extend({}, Jazzcat.defaults, options || {});
         var concat = options.concat;
-        // A Boolean to control whether the loader is inlined into the document, 
+        // A Boolean to control whether the loader is inlined into the document,
         // or only added to the returned scripts array
         var inlineLoader = ((options.inlineLoader !== undefined) ?
           options.inlineLoader: true);
@@ -2049,7 +2049,7 @@ return ResizeImages;
                 script.parentNode.insertBefore(loader, script);
             }
         };
-        // helper for appending loader script into an array before the 
+        // helper for appending loader script into an array before the
         // referenced script
         var appendLoaderForScriptsToArray = function(array, urls) {
             var loader = Jazzcat.getLoaderScript(urls, options);
@@ -2100,7 +2100,7 @@ return ResizeImages;
 
             // TODO: Check for async/defer
 
-            // Load what we have in http cache, and insert loader into document 
+            // Load what we have in http cache, and insert loader into document
             // or result array
             if (!Jazzcat.cacheLoaderInserted) {
                 httpCache.load(httpCache.options);
@@ -2118,7 +2118,7 @@ return ResizeImages;
             if (inlineLoader) {
                 parent = (script.parentNode.nodeName === "HEAD" ? "head" : "body");
             } else {
-                // If we're not going to use the inline loader, we'll do 
+                // If we're not going to use the inline loader, we'll do
                 // something terrible and put everything into the head bucket
                 parent = 'head';
             }
@@ -2154,7 +2154,7 @@ return ResizeImages;
 
             // Remove the src attribute
             script.removeAttribute(options.attribute);
-            
+
             // Enqueue the script to be returned
             if (!inlineLoader) {
                 resultScripts.push(script);
@@ -2187,7 +2187,7 @@ return ResizeImages;
     };
 
     /**
-     * Private helper that returns a script node that when run, loads the 
+     * Private helper that returns a script node that when run, loads the
      * httpCache from localStorage.
      */
     Jazzcat.getHttpCacheLoaderScript = function(options) {
@@ -2201,11 +2201,11 @@ return ResizeImages;
     };
 
     /**
-     * Returns an array of scripts suitable for loading Jazzcat's localStorage 
+     * Returns an array of scripts suitable for loading Jazzcat's localStorage
      * cache and loading any uncached scripts through the jazzcat service. Takes
-     * a list of URLs to load via the service (possibly empty), the name of the 
-     * jsonp callback used in loading the service's response and a boolean of 
-     * whether we expect the cache to have been loaded from localStorage by this 
+     * a list of URLs to load via the service (possibly empty), the name of the
+     * jsonp callback used in loading the service's response and a boolean of
+     * whether we expect the cache to have been loaded from localStorage by this
      * point.
      */
     Jazzcat.getLoaderScript = function(urls, options) {
@@ -2371,15 +2371,15 @@ if (capturing) {
 window.matchMedia = window.matchMedia || Utils.matchMedia(document);
 
 /* https://github.com/Wilto/picturefill-proposal */
-/*! Picturefill - Author: Scott Jehl, 2012 | License: MIT/GPLv2 */ 
+/*! Picturefill - Author: Scott Jehl, 2012 | License: MIT/GPLv2 */
 /*
     Picturefill: A polyfill for proposed behavior of the picture element, which does not yet exist, but should. :)
-    * Notes: 
+    * Notes:
         * For active discussion of the picture element, see http://www.w3.org/community/respimg/
         * While this code does work, it is intended to be used only for example purposes until either:
             A) A W3C Candidate Recommendation for <picture> is released
             B) A major browser implements <picture>
-*/ 
+*/
 (function( w ){
     // Enable strict mode
     "use strict";
@@ -2416,7 +2416,7 @@ window.matchMedia = window.matchMedia || Utils.matchMedia(document);
             // See which sources match
             for( var j = 0, jl = sources.length; j < jl; j++ ){
                 var media = sources[ j ].getAttribute( "media" );
-                // if there's no media specified, OR w.matchMedia is supported 
+                // if there's no media specified, OR w.matchMedia is supported
                 if( !media || ( w.matchMedia && w.matchMedia( media ).matches ) ){
                     matches.push( sources[ j ] );
                 }

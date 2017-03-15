@@ -2,10 +2,10 @@ var myHomepage = function(){
   //back-end
 
   //"private" variables
-  var viewport = document.querySelector("meta[name=viewport]");
-  console.log(viewport);
-  var viewportAll = document.querySelectorAll("meta[name=viewport]");
-  console.log(viewportAll);
+  // var viewport = document.querySelector("meta[name=viewport]");
+  // console.log(viewport);
+  // var viewportAll = document.querySelectorAll("meta[name=viewport]");
+  // console.log(viewportAll);
   var windowWidth = $(window).width();
   console.log(windowWidth);
 
@@ -18,27 +18,42 @@ var myHomepage = function(){
 
   //"private" methods
   var rotateGallery = function(){
+
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
   var changeViewport = function(){
-    // var w = $(document).width();
-    var text = windowWidth <= 414 ? "Desktop View" : "Back to Mobile View";
-    $(".desktop-mobile-view").html(text);
+    var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+    // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+    $(".desktop-mobile-view").click(function(){
+      // var text = windowWidth < 768 ? "Back to Mobile View" : "Desktop View";
+      // $(".desktop-mobile-view").html(text);
+
+    });
+
   };
+
 
   // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass(".desktop-mobile-view");
 
   // var mobileDevice = windowWidth < 768 ? $(navbar-nav).firstChild : false;
 
-  var mobileDevice = windowWidth < 768 ? true : false;
   // var test = mobileDevice ? toggleClass(".desktop-mobile-view") : toggleClass(".desktop-mobile-view");
-  changeViewport();
+
+  // changeViewport();
 
   //front-end
+  // changeViewport();
+  var mobileDevice = windowWidth < 768 ? true : false;
+
+  var mobileDisplay = mobileDevice = true ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+
+  var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass("mobile-view") : $(".desktop-mobile-view").toggleClass("desktop-mobile-view");
+
   setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
-
+    // changeViewport();
+    $(this).toggleClass("mobile-view");
   });
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");

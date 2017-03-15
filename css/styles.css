@@ -78,9 +78,13 @@ span{
 }
 
 /* ---- My Classes ---- */
-.desktop-mobile-view{
+/*.desktop-mobile-view{
   display: none;
-}
+}*/
+
+/*.mobile-view{
+  display: block;
+}*/
 
 .more-content{
   display: none;
