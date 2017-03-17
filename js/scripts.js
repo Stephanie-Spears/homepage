@@ -1,11 +1,20 @@
+//
+// if (screen.width < 480) {
+//  document.getElementById("viewport").setAttribute("content", "width=480");
+// }
+//
+//
+//
+// if (screen.width < 480) {
+//   $("#viewport").attr("content", "width=480");
+// }
+
+
+
 var myHomepage = function(){
   //back-end
 
   //"private" variables
-  // var viewport = document.querySelector("meta[name=viewport]");
-  // console.log(viewport);
-  // var viewportAll = document.querySelectorAll("meta[name=viewport]");
-  // console.log(viewportAll);
   var windowWidth = $(window).width();
 
   var i = 0;
@@ -22,6 +31,11 @@ var myHomepage = function(){
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
   var changeViewport = function(){
+
+
+    if (screen.width < 480) {
+     document.getElementById("viewport").setAttribute("content", "width=480");
+   }
     var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
     // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
     $(".desktop-mobile-view").click(function(){
