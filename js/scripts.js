@@ -60,9 +60,10 @@ var myHomepage = function(){
   var checkViewport = function(){
     var mobileDisplay = $(window).width() < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
     $(".desktop-mobile-view").click(function(){
+
+      $("#viewport").attr("content", "width=1000");
       $(this).html("Back To Mobile");
       $(window).width();
-      // console.log()
     });
   };
 
@@ -70,6 +71,7 @@ var myHomepage = function(){
   // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass("mobile-view") : $(".desktop-mobile-view").toggleClass("desktop-mobile-view");
 
   // changeViewport();
+
   checkViewport();
   setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
