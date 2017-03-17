@@ -30,21 +30,21 @@ var myHomepage = function(){
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
-  var changeViewport = function(){
-
-
-    if (screen.width < 480) {
-     document.getElementById("viewport").setAttribute("content", "width=480");
-   }
-    var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
-    // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
-    $(".desktop-mobile-view").click(function(){
-      // var text = windowWidth < 768 ? "Back to Mobile View" : "Desktop View";
-      // $(".desktop-mobile-view").html(text);
-
-    });
-
-  };
+  // var changeViewport = function(){
+  //
+  //
+  //   if (screen.width < 480) {
+  //    document.getElementById("viewport").setAttribute("content", "width=480");
+  //  }
+  //   var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+  //   // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+  //   $(".desktop-mobile-view").click(function(){
+  //     // var text = windowWidth < 768 ? "Back to Mobile View" : "Desktop View";
+  //     // $(".desktop-mobile-view").html(text);
+  //
+  //   });
+  //
+  // };
 
 
   // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass(".desktop-mobile-view");
