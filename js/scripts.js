@@ -1,53 +1,29 @@
-//
-// if (screen.width < 480) {
-//  document.getElementById("viewport").setAttribute("content", "width=480");
-// }
-//
-//
-//
-// if (screen.width < 480) {
-//   $("#viewport").attr("content", "width=480");
-// }
-
-
-
 var myHomepage = function(){
   //back-end
 
   //"private" variables
-  var windowWidth = $(window).width();
-
+  var startWidth = $(window).width();
   var i = 0;
   var x = 0;
   var gallerySource = ["url(img/Forest.jpg)", "url(img/Arc1.jpg)", "url(img/Arc2.jpg)", "url(img/Juso.jpg)"];
   var iconArray = ["img/gachapin1.png", "img/mukku.png", "img/gachapin2.png", "img/gachapinMukku.png"];
   var animationArray = [ " rollIn", " flip", " rotateIn", " rubberBand"];
 
-
   //"private" methods
   var rotateGallery = function(){
-
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
 
-  //front-end
   var checkViewport = function(){
-    var mobileWidth = $(window).width();
-      var test = windowWidth < mobileWidth ? $("#viewport").attr("content", "width=" + windowWidth ) : $("#viewport").attr("content", "width=1200");
-    var test2 = windowWidth < mobileWidth ?$(".desktop-mobile-view").html("Desktop View") :  $(".desktop-mobile-view").html("Back To Mobile View") ;
-
-    console.log("windowWidth: " + windowWidth);
-    console.log("mobileWidth: " + mobileWidth);
-
-      // $("#viewport").attr("content", "width=1200");
-      // $(this).html("Back To Mobile");
-      // $("#viewport").attr("content", "width=1200");
+    var currentWidth = $(window).width();
+    var changeWidth = startWidth < currentWidth ? $("#viewport").attr("content", "width=" + startWidth) : $("#viewport").attr("content", "width=1299");
+    var changeText = startWidth < currentWidth ? $(".desktop-mobile-view").html("Desktop View") :  $(".desktop-mobile-view").html("Back To Mobile View");
   };
 
-  var mobileDisplay = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+  //front-end
+  var mobileDisplay = startWidth < 768 ? $(".desktop-mobile-view").css("display", "inline-block") : $(".desktop-mobile-view").css("display", "none");
    setInterval(function(){rotateGallery();},600000);
-
   $(".desktop-mobile-view").click(function(){
     checkViewport();
   });
