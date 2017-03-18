@@ -23,7 +23,7 @@ var myHomepage = function(){
 
   //front-end
   var windowDisplay = startWidth < 768 ?
-  $(".desktop-mobile-view").css("display", "inline-block") : $(".desktop-mobile-view").css("display", "none");
+  $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") : $(".desktop-mobile-view").css("display", "none");
    setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
     checkViewport();
