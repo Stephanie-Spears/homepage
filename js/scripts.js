@@ -48,8 +48,6 @@ var myHomepage = function(){
   $(".show-hide-btn").click(function(event) {
     // var target = $(this).height();
     var target2 = $(window).height();
-    console.log("this: " + target);
-    console.log("this: " + target2);
     var moreLessText = $(this).parent().prev(".more-content").is(":visible") ? "Show more (+)" : "Less (–)";
     $(this).parent().prev(".more-content").toggleClass("visible");
     $(this).html(moreLessText);
