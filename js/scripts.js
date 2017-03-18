@@ -18,12 +18,11 @@ var myHomepage = function(){
   var checkViewport = function(){
     var currentWidth = $(window).width();
     var changeWidth = startWidth < currentWidth ? window.location.reload() : $("#viewport").attr("content", "width=1200");
-    var changeText = startWidth < currentWidth ? $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") :  $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i> Back To Mobile View");
-
+    $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i>Mobile View");
   };
 
   //front-end
-  var mobileDisplay = startWidth < 768 ?
+  var windowDisplay = startWidth < 768 ?
   $(".desktop-mobile-view").css("display", "inline-block") : $(".desktop-mobile-view").css("display", "none");
    setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
@@ -54,29 +53,4 @@ var myHomepage = function(){
     event.preventDefault();
   });
 
-
-  // var viewport = (w < 500) ?
-  // $("body").previewer({show: true, type: "phone"}) : $("body").previewer({show: true, type: "desktop"});
-
-  // With option
-// $("body").previewer({
-//   show: true,
-//   type: 'desktop'
-// });
-
-// With method
-// $('body').previewer('show');
-
-// // Set previewer options
-// $().previewer(options);
-
-// // Change the global default options
-// $.fn.previewer.setDefaults(options);
-
-// //methods ... show() hide() destroy ()
-// $().previewer('method');
-
-
-
 }(); // the parens here cause the anonymous function to execute and return
-//condition("if") ? ("then") value-if-true :("else") value-if-false
