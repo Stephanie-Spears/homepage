@@ -17,12 +17,14 @@ var myHomepage = function(){
 
   var checkViewport = function(){
     var currentWidth = $(window).width();
-    var changeWidth = startWidth < currentWidth ? $("#viewport").attr("content", "width=" + startWidth) : $("#viewport").attr("content", "width=1299");
-    var changeText = startWidth < currentWidth ? $(".desktop-mobile-view").html("Desktop View") :  $(".desktop-mobile-view").html("Back To Mobile View");
+    var changeWidth = startWidth < currentWidth ? window.location.reload() : $("#viewport").attr("content", "width=1200");
+    var changeText = startWidth < currentWidth ? $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") :  $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i> Back To Mobile View");
+
   };
 
   //front-end
-  var mobileDisplay = startWidth < 768 ? $(".desktop-mobile-view").css("display", "inline-block") : $(".desktop-mobile-view").css("display", "none");
+  var mobileDisplay = startWidth < 768 ?
+  $(".desktop-mobile-view").css("display", "inline-block") : $(".desktop-mobile-view").css("display", "none");
    setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
     checkViewport();
