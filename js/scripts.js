@@ -18,7 +18,7 @@ var myHomepage = function(){
   var checkViewport = function(){
     var currentWidth = $(window).width();
     var changeWidth = startWidth < currentWidth ? window.location.reload() : $("#viewport").attr("content", "width=1200");
-    $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i>Mobile View");
+    $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i>Mobile");
   };
 
   //front-end
