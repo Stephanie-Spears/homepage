@@ -30,53 +30,26 @@ var myHomepage = function(){
     x = (x < gallerySource.length -1) ? ++x : 0;
     $("#homepage-main").css("background-image", gallerySource[x]).fadeOut(0).fadeIn(1000);
   };
-  // var changeViewport = function(){
-  //
-  //
-  //   if (screen.width < 480) {
-  //    document.getElementById("viewport").setAttribute("content", "width=480");
-  //  }
-  //   var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
-  //   // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
-  //   $(".desktop-mobile-view").click(function(){
-  //     // var text = windowWidth < 768 ? "Back to Mobile View" : "Desktop View";
-  //     // $(".desktop-mobile-view").html(text);
-  //
-  //   });
-  //
-  // };
-
-
-  // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass(".desktop-mobile-view");
-
-  // var mobileDevice = windowWidth < 768 ? $(navbar-nav).firstChild : false;
-
-  // var test = mobileDevice ? toggleClass(".desktop-mobile-view") : toggleClass(".desktop-mobile-view");
-
-  // changeViewport();
 
   //front-end
-  // changeViewport();
   var checkViewport = function(){
-    var mobileDisplay = $(window).width() < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
-    $(".desktop-mobile-view").click(function(){
+    var mobileWidth = $(window).width();
+      var test = windowWidth < mobileWidth ? $("#viewport").attr("content", "width=" + windowWidth ) : $("#viewport").attr("content", "width=1200");
+    var test2 = windowWidth < mobileWidth ?$(".desktop-mobile-view").html("Desktop View") :  $(".desktop-mobile-view").html("Back To Mobile View") ;
 
-      $("#viewport").attr("content", "width=1000");
-      $(this).html("Back To Mobile");
-      $(window).width();
-    });
+    console.log("windowWidth: " + windowWidth);
+    console.log("mobileWidth: " + mobileWidth);
+
+      // $("#viewport").attr("content", "width=1200");
+      // $(this).html("Back To Mobile");
+      // $("#viewport").attr("content", "width=1200");
   };
 
+  var mobileDisplay = windowWidth < 768 ? $(".desktop-mobile-view").html("Desktop View") : $(".desktop-mobile-view").css("display", "none");
+   setInterval(function(){rotateGallery();},600000);
 
-  // var mobileDevice = windowWidth < 768 ? $(".desktop-mobile-view").toggleClass("mobile-view") : $(".desktop-mobile-view").toggleClass("desktop-mobile-view");
-
-  // changeViewport();
-
-  checkViewport();
-  setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
-    // changeViewport();
-    $(this).toggleClass("mobile-view");
+    checkViewport();
   });
   $("#nav-icon").click(function(){
     $("#nav-icon").toggleClass("open");
