@@ -45,7 +45,6 @@ h1{
 }
 
 nav a, footer a{
-  /*width: 100%;*/
   display: inline-block;
   color: #f8f8f8;
 }
