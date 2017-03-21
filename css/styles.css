@@ -38,7 +38,7 @@ canvas{
 
 h1{
   font-size: 45px;
-  font-size: 9vmin;
+  /*font-size: 9vmin;*/
   display: inline-block;
   width: 100%;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
