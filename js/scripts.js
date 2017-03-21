@@ -16,16 +16,14 @@ var myHomepage = function(){
   };
 
   var checkViewport = function(){
-    var windowDisplay = startWidth < 768 ? $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i> Mobile") : $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View");
     var currentWidth = $(window).width();
     var changeWidth = startWidth < currentWidth ? window.location.reload() : $("#viewport").attr("content", "width=1200");
-    // $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i> Mobile");
+    $(".desktop-mobile-view").html("<i class='fa fa-mobile' aria-hidden='true'></i> Mobile");
   };
 
   //front-end
-  checkViewport();
-  // var windowDisplay = startWidth < 768 ?
-  // $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") : $(".desktop-mobile-view").css("display", "none");
+  var windowDisplay = startWidth < 768 ?
+  $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") : $(".desktop-mobile-view").css("display", "none");
    setInterval(function(){rotateGallery();},600000);
   $(".desktop-mobile-view").click(function(){
     checkViewport();
