@@ -20,8 +20,8 @@ particlesJS('particles-js',
         "value": "#ffffff"
       },
       "shape": {
-        // "type": "polygon",
-        "type": "image",
+        "type": "polygon",
+        // "type": "image",
         "stroke": {
           "width": 0,
           "color": "#000000"
