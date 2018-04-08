@@ -24,7 +24,7 @@ const myHomepage = function(){
   //front-end
   const windowDisplay = startWidth < 992 ?
   $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") : $(".desktop-mobile-view").css("display", "none");
-   setInterval(function(){rotateGallery();},5000);
+   setInterval(function(){rotateGallery();},10000);
   $(".desktop-mobile-view").click(function(){
     checkViewport();
   });
