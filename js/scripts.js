@@ -1,4 +1,4 @@
-const myHomepage = () => {
+const myHomepage = function(){
   //back-end
 
   //"private" variables
@@ -22,9 +22,9 @@ const myHomepage = () => {
   };
 
   //front-end
-  let windowDisplay = startWidth < 992 ?
+  const windowDisplay = startWidth < 992 ?
   $(".desktop-mobile-view").html("<i class='fa fa-desktop' aria-hidden='true'></i> Desktop View") : $(".desktop-mobile-view").css("display", "none");
-   setInterval(function(){rotateGallery();},20000);
+   setInterval(function(){rotateGallery();},5000);
   $(".desktop-mobile-view").click(function(){
     checkViewport();
   });
@@ -54,4 +54,4 @@ const myHomepage = () => {
     event.preventDefault();
   });
 
-};
+}();
